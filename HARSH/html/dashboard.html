@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Brain Wellness Spa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mCustomScrollbar.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/css/bootstrap-tour-standalone.min.css"> <!-- tour style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" />
+
+    <style>
+		.close.tip-close
+		{
+			padding: 5px 5px 5px 0px;
+			z-index: 1;
+            cursor: pointer;
+		}
+		.popover-title
+		{
+			background: #fff;
+            font-weight: 600;
+		}
+		.popover-content {
+			padding: 10px 14px 8px 14px;
+			margin-bottom: 0;
+		}
+		#hca-left-nav--tooltip-ok
+		{
+			float: right;
+			border: 1px solid #555;
+			margin-bottom: 5px;
+			margin-right: 5px;
+			outline: none;
+			box-shadow: none;
+			padding: 3px 6px;
+  			font-size: 14px;
+		}
+		#hca-left-nav--tooltip-ok:focus,
+		#hca-left-nav--tooltip-ok:hover
+		{
+			outline: none;
+			box-shadow: none;
+		}
+		@media all and (max-width:767px)
+		{
+			.popover-title {
+				position: unset;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="image/logo.png" class="img-fluid logo">
+                <img src="image/sidebar-small-logo.png" class="img-fluid small-logo">
+            </div>
+
+            <div class="sidebar-scroll mCustomScrollbar">
+
+                <ul class="list-unstyled components">
+                    <li class="nav-item">
+                        <a class="nav-link " href="dashboard.html">
+                            <i class="fa fa-tachometer"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="dashboard-user.html">
+                            <i class="fa fa-tachometer"></i>
+                            <span>Dashboard-2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#appoin-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-copy"></i>
+                            <span>Appoinment</span>
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="appoin-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="appoinment-list.html">Appoinment list</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="session-info.html">Session Info</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="appoinment-info.html">Appoinment Info</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-list-alt"></i>
+                            <span>Invoice</span>
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="pageSubmenu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="invoice-list.html">Invoice List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="invoice-details.html">Invoice Details</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#audio-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-music"></i>
+
+                            <span>Audios</span>
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="audio-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="audio.html">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="audio-all.html">Audio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="playlist-all.html">Playlist</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#forum-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-comments"></i>
+
+                            <span>Forum</span>
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="forum-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="forum-add.html">Forum Question</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forum-details.html">Forum Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="billing-info.html">
+                            <i class="fa fa-money"></i>
+
+                            <span>Billing and Order</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="feedback.html">
+                            <i class="fa fa-thumbs-up"></i>
+
+                            <span>Feedback</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#resources-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-book"></i>
+
+                            <span>Resources</span>
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="resources-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="resource.html">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-apps.html">Apps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-books.html">Audio Books</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-documentaries.html">Documentaries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-podcasts.html">Podcasts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-websites.html">Websites</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="faq.html">
+                            <i class="fa fa-question-circle"></i>
+
+                            <span>FAQ</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- header -->
+
+        <header id="header">
+            <div class="justify-content-between d-flex">
+                <div class="justify-content-start d-flex">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fa fa-bars"></i>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="justify-content-end d-flex align-items-center">
+                    <div class="bell mr-4 dropdown" id="bell">
+                        <button type="button" class="btn btn-drope search-btn dropdown-toggle font-15-light"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa fa-bell-o more-btn " id="more-best"></i>
+                            <span class="badge badge-primary badge-pill">2</span>
+                        </button>
+
+                        <div class="dropdown-menu main-drop-menu border-0 two" x-placement="bottom-start"
+                            style="position: absolute; transform: translate3d(0px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+
+                            <h5 class="font-16 mb-4">Notifications</h5>
+                            <ul>
+                                <li>
+                                    <div class="not-data">
+                                        <div class="not-img text-center text-white">
+                                            I
+                                        </div>
+                                        <div class="not-content">
+                                            <h5 class="font-16">Invoice</h5>
+                                            <span class="font-14-medium">Invoice sent to yor mail.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="not-data">
+                                        <div class="not-img text-center text-white">
+                                            F
+                                        </div>
+                                        <div class="not-content">
+                                            <h5 class="font-16">Forum</h5>
+                                            <span class="font-14-medium">@maria replied to your question.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-image ">
+                        <img src="image/dummy-profile.png" class="img-fluid">
+                    </div>
+                    <div class="dropdown mr-3">
+                        <button type="button" class="btn btn-drope search-btn dropdown-toggle font-15-light"
+                            data-toggle="dropdown" aria-expanded="false">
+                            John
+                        </button>
+
+                        <div class="dropdown-menu main-drop-menu border-0" x-placement="bottom-start"
+                            style="position: absolute; transform: translate3d(0px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+                            <a class="dropdown-item font-15-light mb-1" href="profile.html">Profile</a>
+                            <a class="dropdown-item font-15-light" href="setting.html"> Setting</a>
+                            <a class="dropdown-item font-15-light" href="index.html"> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content  -->
+
+        <div id="content">
+            <div class="content-main">
+                <div id="home" class="container "><br>
+                    <h2 class="main-heading mb-4">Dashboard</h2>
+                    <div class="row mb-8">
+                        <div class="col-xl-4 large-mb-6">
+                            <div class="overflow-hidden card">
+                                <div class="bg-soft-primary">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-primary p-3">
+                                                <h5 class="text-primary">Welcome !</h5>
+                                                <p class="ml-2">Usename</p>
+                                            </div>
+                                        </div>
+                                        <div class="align-self-end col-5 pt-4">
+                                            <img src="image/dashboard-card.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-0 card-body">
+                                    <div class="row justify-content-center d-flex">
+                                        <div class="col-sm-12 text-center">
+                                            <div class="profile-user-wid mb-2 d-block">
+                                                <img src="image/dummy-profile.png" alt="" width="135"
+                                                    class="img-thumbnail rounded-circle mb-4">
+                                                <h5 class="font-22 mb-3">John Smith</h5>
+                                                <div class="mb-4 text-center">
+                                                    <a class="btn btn-blue font-15-light" href="#">View Profile </a>
+                                                </div>
+                                                <p class="font-15-light">Last login :<span>May 20, 2020 1:48 PM</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="">
+                                <iframe class="dashboard embed-responsive-item bg-white" width="100%" height="410"
+                                    class="bg-white" src="https://www.youtube.com/embed/BXQpKtXqImc" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-8">
+                        <div class="col-xl-8 large-mb-6">
+                            <div class="card border-0 h-100"  id="panel1">
+                                <div class="media align-items-center">
+                                    <div class="sessionbox font-16-semibold">Next <br> Session</div>
+                                    <div class="media-body pl-2">
+                                        <a href="#" class=" nav-link p-0 main-heading mb-3 d-block ">Emotional
+                                            Empowerment Program Session 1</a>
+                                        <h5 class="font-12-light mb-3">To achieve it would be necessary, achieve it
+                                            would be
+                                            necessary achieve it would be necessary</h5>
+
+                                        <div class="d-inline-block text-left w-100">
+                                            <ul class="list-inline mb-0 d-inline ">
+                                                <li class="list-inline-item mr-3">
+                                                    <h5 class="font-14"><i class="fa fa-calendar  mr-1"></i> 10 Oct, 19
+                                                    </h5>
+                                                </li>
+                                                <li class="list-inline-item mr-3">
+                                                    <h5 class="font-14"><i class="fa fa-hourglass-start  mr-1"></i> 60
+                                                        Min
+                                                    </h5>
+                                                </li>
+                                                <li class="list-inline-item mr-2">
+                                                    <h5 class="font-14"><i class="fa fa-clock-o  mr-1"></i> 12:00 AM
+                                                    </h5>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="media bg-white h-100 pt-2 pb-2" id="panel2">
+                                <div class="media-body p-3">
+                                    <h4 class="font-16 mb-3">Task Complete Before Join for Next session</h4>
+                                    <div class="">
+                                        <div class="form-group custom-check mb-2">
+                                            <input type="checkbox" id="bkg1">
+                                            <label for="bkg1" class="font-14-medium">Loream Ipsum</label>
+                                        </div>
+                                        <div class="form-group custom-check mt-0">
+                                            <input type="checkbox" id="bkg2">
+                                            <label for="bkg2" class="font-14-medium">Loream Ipsum</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="main-heading mb-3">Recommended Playlists</h2>
+                    <div class="card one mb-8" id="panel3">
+                        <div class="card-body p-0">
+                            <div class="hori-timeline">
+                                <div class="carousel-wrap">
+                                    <div class="owl-carousel playlist-carousel">
+                                        <div class="item ">
+                                            <div class="justify-content-center d-flex ">
+                                                <img src="image/aud-2.jpg" class="img-fluid mb-3" width="180">
+                                            </div>
+                                            <a href="audio-info.html" class="text-center mb-0 d-block font-16">Playlist
+                                                1</a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="justify-content-center d-flex">
+                                                <img src="image/aud-3.jpg" class="img-fluid mb-3" width="180">
+                                            </div>
+                                            <a href="audio-info.html" class="text-center mb-0 d-block font-16">Playlist
+                                                2</a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="justify-content-center d-flex">
+                                                <img src="image/aud-3.jpg" class="img-fluid mb-3" width="180">
+                                            </div>
+                                            <a href="audio-info.html" class="text-center mb-0 d-block font-16">Playlist
+                                                2</a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="justify-content-center d-flex">
+                                                <img src="image/aud-3.jpg" class="img-fluid mb-3" width="180">
+                                            </div>
+                                            <a href="audio-info.html" class="text-center mb-0 d-block font-16">Playlist
+                                                2</a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="justify-content-center d-flex">
+                                                <img src="image/aud-3.jpg" class="img-fluid mb-3" width="180">
+                                            </div>
+                                            <a href="audio-info.html" class="text-center mb-0 d-block font-16">Playlist
+                                                2</a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="justify-content-center d-flex">
+                                                <img src="image/aud-3.jpg" class="img-fluid mb-3" width="180">
+                                            </div>
+                                            <a href="audio-info.html" class="text-center mb-0 d-block font-16">Playlist
+                                                2</a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="justify-content-center d-flex">
+                                                <img src="image/aud-3.jpg" class="img-fluid mb-3" width="180">
+                                            </div>
+                                            <a href="audio-info.html" class="text-center mb-0 d-block font-16">Playlist
+                                                2</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            <h2 class="main-heading mb-3">Results</h2>
+                            <div class="card text-center" id="panel4">
+                                <div class="card-body" style="position: relative;">
+                                    <div id="line-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <footer>
+            <div class="container">
+                <div class="step-header bg-white">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            Step-1
+                        </div>
+                        <div class="col-md-4">
+                            Step-2
+                        </div>
+                        <div class="col-md-4">
+                            Step-3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mCustomScrollbar.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/js/bootstrap-tour-standalone.min.js"></script> <!-- tour jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        var tour = new Tour({
+        steps: [
+            {
+            element: "#panel1",
+            title: "Next Session",
+            placement: "bottom",
+            backdropPadding: 5,    
+            content: "This panel shows the your next upcoming session at the Clinic.",
+            template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='end' class='close tip-close'>&times;</div><p class='popover-title popover-header'></p><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Next</a></div></div></div>"
+                },
+            {
+            element: "#panel2",
+            title: "Tasks",
+            placement: "bottom",
+            backdropPadding: 20,    
+            content: "This shows any upcoming tasks to be completed prior to your session",
+            template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='end' class='close tip-close'>&times;</div><p class='popover-title popover-header'></p><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Next</a></div></div></div>"
+            },
+            {
+            element: "#panel3",
+            title: "Playlists",
+            placement: "top",
+            backdropPadding: 20,    
+            content: "This segment shows audios bundled for variety of use",
+            template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='end' class='close tip-close'>&times;</div><p class='popover-title popover-header'></p><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='next' class='btn hca-tooltip--okay-btn'>Next</a></div></div></div>"
+            },
+            {
+            element: "#panel4",
+            title: "Results",
+            placement: "top",
+            backdropPadding: 20,    
+            content: "This shows the results as you progress with the EEP sessions",
+            template: "<div class='popover tour hca-tooltip--left-nav'><div class='arrow'></div><div class='row'><div class='col-sm-12'><div data-role='end' class='close tip-close'>&times;</div><p class='popover-title popover-header'></p><p class='popover-content'></p><a id='hca-left-nav--tooltip-ok' href='#' data-role='end' class='btn hca-tooltip--okay-btn'>End</a></div></div></div>"
+            }
+        ],
+        backdrop: true,
+        storage: false
+        });
+
+        // tour.init();
+        // tour.start();
+        tour.init();
+        tour.start();
+        // $("#startTourBtn").click(function() {
+        // tour.restart();
+        // });
+
+    </script>
+    <script>
+        $('.playlist-carousel').owlCarousel({
+            loop: false,
+            items: 4,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            nav: true,
+            navText: [
+                "<i class='fa fa-angle-left'></i>",
+                "<i class='fa fa-angle-right'></i>"
+            ],
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                },
+            }
+        })
+    </script>
+    <script>
+        var data = [{
+                    y: '2014',
+                    a: 50,
+                    b: 10
+                },
+                {
+                    y: '2015',
+                    a: 55,
+                    b: 30
+                },
+                {
+                    y: '2016',
+                    a: 40,
+                    b: 45
+                },
+                {
+                    y: '2017',
+                    a: 30,
+                    b: 50
+                },
+                {
+                    y: '2018',
+                    a: 20,
+                    b: 55
+                }
+            ],
+            config = {
+                data: data,
+                xkey: 'y',
+                ykeys: ['a', 'b'],
+                labels: ['Label 1', 'Label 2'],
+                fillOpacity: 1,
+                hideHover: 'auto',
+                behaveLikeLine: true,
+                resize: true,
+                pointFillColors: ['#2a3042'],
+                pointStrokeColors: ['#2a3042'],
+                lineColors: ['#2a3042', 'gray']
+            };
+        config.element = 'line-chart';
+        Morris.Line(config);
+    </script>
+</body>
+
+</html>

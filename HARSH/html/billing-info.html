@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Billing Information</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mCustomScrollbar.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="image/logo.png" class="img-fluid logo">
+                <img src="image/sidebar-small-logo.png" class="img-fluid small-logo">
+            </div>
+
+            <div class="sidebar-scroll mCustomScrollbar">
+
+                <ul class="list-unstyled components">
+                    <li class="nav-item">
+                        <a class="nav-link " href="dashboard.html">
+                            <i class="fa fa-tachometer"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="dashboard-user.html">
+                            <i class="fa fa-tachometer"></i>
+                            Dashboard-2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#appoin-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-copy"></i>
+                            Appoinment
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="appoin-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="appoinment-list.html">Appoinment list</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="session-info.html">Session Info</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="appoinment-info.html">Appoinment Info</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-list-alt"></i>
+                            Invoice
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="pageSubmenu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="invoice-list.html">Invoice List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="invoice-details.html">Invoice Details</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#audio-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-music"></i>
+                            Audios
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="audio-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="audio.html">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="audio-all.html">Audio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="playlist-all.html">Playlist</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#forum-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-comments"></i>
+                            Forum
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="forum-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="forum-add.html">Forum Question</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forum-details.html">Forum Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="billing-info.html">
+                            <i class="fa fa-money"></i>
+                            Billing and Order
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="feedback.html">
+                            <i class="fa fa-thumbs-up"></i>
+                            Feedback
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#resources-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-book"></i>
+                            Resources
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="resources-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="resource.html">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-apps.html">Apps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-books.html">Audio Books</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-documentaries.html">Documentaries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-podcasts.html">Podcasts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-websites.html">Websites</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="faq.html">
+                            <i class="fa fa-question-circle"></i>
+                            FAQ
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- header -->
+
+        <header id="header">
+            <div class="justify-content-between d-flex">
+                <div class="justify-content-start d-flex">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fa fa-bars"></i>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="justify-content-end d-flex align-items-center">
+
+                    <div class="bell mr-4 dropdown" id="bell">
+                        <button type="button" class="btn btn-drope search-btn dropdown-toggle font-15-light"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa fa-bell-o more-btn " id="more-best"></i>
+                            <span class="badge badge-primary badge-pill">2</span>
+                        </button>
+
+                        <div class="dropdown-menu main-drop-menu border-0 two" x-placement="bottom-start"
+                            style="position: absolute; transform: translate3d(0px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+
+                            <h5 class="font-16 mb-4">Notifications</h5>
+                            <ul>
+                                <li>
+                                    <div class="not-data">
+                                        <div class="not-img text-center text-white">
+                                            I
+                                        </div>
+                                        <div class="not-content">
+                                            <h5 class="font-16">Invoice</h5>
+                                            <span class="font-14-medium">Invoice sent to yor mail.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="not-data">
+                                        <div class="not-img text-center text-white">
+                                            F
+                                        </div>
+                                        <div class="not-content">
+                                            <h5 class="font-16">Forum</h5>
+                                            <span class="font-14-medium">@maria replied to your question.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-image ">
+                        <img src="image/user.png" class="img-fluid">
+                    </div>
+                    <div class="dropdown mr-3">
+                        <button type="button" class="btn btn-drope search-btn dropdown-toggle font-15-light"
+                            data-toggle="dropdown" aria-expanded="false">
+                            John
+                        </button>
+
+                        <div class="dropdown-menu main-drop-menu border-0" x-placement="bottom-start"
+                            style="position: absolute; transform: translate3d(0px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+                            <a class="dropdown-item font-15-light mb-1" href="profile.html">Profile</a>
+                            <a class="dropdown-item font-15-light" href="setting.html"> Setting</a>
+                            <a class="dropdown-item font-15-light" href="index.html"> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content  -->
+
+        <div id="content">
+            <div class="content-main">
+                <div id="payment-info" class="container"><br>
+                    <div class="justify-content-between d-flex small-d-block mb-4">
+                        <h2 class="main-heading">Billing and Order</h2>
+                        <ol class="breadcrumb font-14-medium">
+                            <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                            <li class="breadcrumb-item active">Billing Info</li>
+                        </ol>
+                    </div>
+
+
+                    <div class="payment-data">
+                        <div class="row">
+                            <div class="col-lg-3 col-xl-3 ">
+                                <div class="payment-tab card-woborder-padding bg-lg-none">
+                                    <div class="nav d-block inside-nav nav-pills" id="v-pills-tab" role="tablist"
+                                        aria-orientation="vertical">
+                                        <a class="nav-link active" id="tabs-first-tab" data-toggle="pill"
+                                            href="#tabs-first" role="tab" aria-controls="tabs-first"
+                                            aria-selected="true">Current Plan</a>
+                                        <a class="nav-link" id="tabs-second-tab" data-toggle="pill" href="#tabs-second"
+                                            role="tab" aria-controls="tabs-second" aria-selected="false">Billing
+                                            Address</a>
+                                        <a class="nav-link" id="tabs-third-tab" data-toggle="pill" href="#tabs-third"
+                                            role="tab" aria-controls="tabs-third" aria-selected="false">Payment</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-9 col-xl-9">
+
+                                <div class="payment-content card-woborder-padding two pb-4">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="tabs-first" role="tabpanel"
+                                            aria-labelledby="tabs-first-tab">
+
+                                            <p class="font-15-light">You are currently paying $39.9 per Month on the
+                                                Membership.</p>
+                                            <div class="row">
+                                                <div class="col-lg-12 text-right">
+                                                    <span class="btn bg-dark text-white mr-2 invisible">normal</span>
+                                                    <span id="add-cancel"
+                                                        class="btn bg-dark text-white mr-2">Cancel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="tabs-second" role="tabpanel"
+                                            aria-labelledby="tabs-second-tab">
+
+                                            <!-- <div class="row mb-4 align-items-center d-flex">
+                                                <div class="col-lg-12 col-lg-6 col-xl-6 mb-4">
+                                                    <div class="hover-card1 one relative">
+                                                        <h4 class="font-18 mb-3">Billing Address</h4>
+                                                        <span class="font-16 mb-2 mr-2">Ahmedabad, Gujarat</span>
+                                                        <span class="font-14-medium mb-4">380016</span>
+                                                        <div class="row">
+                                                            <div class="col-6 text-left">
+                                                                <a href="#" class="btn"><i class="fa fa-trash"></i></a>
+                                                            </div>
+                                                            <div class="col-6 text-right">
+                                                                <a href="javascript:;" class="btn" data-toggle="modal"
+                                                                    data-target=".edit-address"><i
+                                                                        class="fa fa-pencil"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-lg-4 mb-2">
+                                                        <div class="form-group align-items-center">
+                                                            <label class="font-16" for="fname">Consesion Type</label>
+                                                            <select class="form-control" id="title">
+                                                                <option>None</option>
+                                                                <option>Senior</option>
+                                                                <option>Student</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-2">
+                                                        <div class="form-group align-items-center">
+                                                            <label class="font-16" for="fname">Title</label>
+                                                            <select class="form-control font-14-medium" id="title">
+                                                                <option>Mr.</option>
+                                                                <option>Ms.</option>
+                                                                <option>Mrs.</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-2">
+                                                        <div class="form-group align-items-center">
+                                                            <label class="font-16" for="fname">First
+                                                                Name</label>
+                                                            <input type="text" class="form-control font-14-medium"
+                                                                id="fname" placeholder="Enter First Name" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-2">
+                                                        <div class="form-group align-items-center">
+                                                            <label class="font-16" for="lname">Last
+                                                                Name</label>
+                                                            <input type="text" class="form-control font-14-medium"
+                                                                id="lname" placeholder="Enter Last Name" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-2">
+                                                        <div class="form-group align-items-center">
+                                                            <label class="font-16" for="mobile">Mobile Number</label>
+                                                            <input type="text" class="form-control font-14-medium"
+                                                                id="mobile" placeholder="Enter Mobile Number" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-2">
+                                                        <div class="form-group align-items-center">
+                                                            <label class="font-16" for="email">Email Address</label>
+                                                            <input type="email" class="form-control font-14-medium "
+                                                                id="email" placeholder="Enter Email Address" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 mb-4">
+                                                        <div class="form-group align-items-center">
+                                                            <label class="font-16" for="address">Address</label>
+                                                            <input type="address" class="form-control font-14-medium"
+                                                                id="address" placeholder="Enter Address" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 text-right">
+                                                        <a href="#" type="submit" class="btn btn-dark mr-2">Reset</a>
+                                                        <a href="#" type="submit" class="btn btn-blue">Next</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="tabs-third" role="tabpanel"
+                                            aria-labelledby="tabs-third-tab">
+
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12 col-xl-6 lg-mb-4">
+                                                    <div class="hover-card1 one relative">
+                                                        <h4 class="font-18 mb-3">Saved Credit Card</h4>
+                                                        <span class="font-16 mb-2 mr-2">Visa Card</span>
+                                                        <span class="font-14-medium mb-4">1234 56786 5465 ***</span>
+                                                        <div class="row">
+                                                            <div class="col-6 text-left">
+                                                                <a href="#" class="btn"><i class="fa fa-trash"></i></a>
+                                                            </div>
+                                                            <div class="col-6 text-right"> <a href="#" class="btn"
+                                                                    data-toggle="modal"
+                                                                    data-target=".edit-card-details"><i
+                                                                        class="fa fa-pencil"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-xl-6">
+                                                    <div class="hover-card1 one text-center">
+                                                        <h4 class="font-18 my-3">Add New Card</h4>
+
+                                                        <spna id="add-card" class="btn bg-dark text-white"><i
+                                                                class="fa fa-plus"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="show-card">
+                                                <img src="image/paymentcard.png" class="img-fluid my-4">
+                                                <form>
+                                                    <div class="row align-items-center d-flex mb-2">
+                                                        <div class="col-sm-12 col-md-6 mb-2">
+                                                            <div class="form-group">
+                                                                <label or="NameOnCard">Card number</label>
+                                                                <input id="NameOnCard" placeholder="Enter card Number"
+                                                                    class="form-control font-14-medium" type="text"
+                                                                    maxlength="255"></input>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-6 mb-2">
+                                                            <div class="form-group">
+                                                                <label for="number">Name on card</label>
+                                                                <input id="number" autocomplete="off"
+                                                                    placeholder="Enter Name here"
+                                                                    class="font-14-medium form-control"
+                                                                    type="text"></input>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-6 col-lg-3 mb-2">
+                                                            <div class="form-group">
+                                                                <label for="type">Card type</label>
+                                                                <select id="type"
+                                                                    class="mt-0 font-14-medium form-control">
+                                                                    <option value="0" selected="">Select Card</option>
+                                                                    <option value="1">Master Card</option>
+                                                                    <option value="2">Visa Card</option>
+                                                                    <option value="3">American Card</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-3 col-lg-4 mb-2">
+                                                            <div class="form-group">
+                                                                <label for="date">Expiration</label>
+                                                                <select id="date"
+                                                                    class="mt-0 font-14-medium form-control">
+                                                                    <option value="0" selected="">Month</option>
+                                                                    <option value="1">2</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">4</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-3 col-lg-4 mb-2">
+                                                            <div class="form-group">
+                                                                <label for="month"
+                                                                    class="d-lg-inline d-none">&nbsp;</label>
+                                                                <select id="month"
+                                                                    class="mt-0  font-14-medium form-control">
+                                                                    <option value="0" selected="">Year</option>
+                                                                    <option value="1">2</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">4</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-3 col-lg-4 mb-2">
+                                                            <div class="form-group">
+                                                                <label for="cvv">CVV</label>
+                                                                <input id="cvv" placeholder="CVV"
+                                                                    class=" font-14-medium form-control"
+                                                                    type="text"></input>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 mb-4">
+                                                            <div class="custom-control custom-checkbox ">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="customCheck" name="example1">
+                                                                <label class="custom-control-label font-12-light pt-1"
+                                                                    for="customCheck">Save your card details for faster
+                                                                    checkout. CVV is not saved.</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="justify-content-between d-flex small-diff">
+                                                        <div class="total">
+                                                            <h2 class="font-22 ">$1,445</h2>
+                                                            <span class="font-12-light">Total in INR incl fee</span>
+                                                        </div>
+                                                        <div class="">
+                                                            <button type="submit" class="btn btn-blue">Make
+                                                                Payment</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-woborder-padding two show-cancel mt-4">
+                                    <div class="text-left">
+                                        <h4 class="font-18 mb-2">OH! NO! LET US KNOW</h4>
+                                        <p class="font-15 mb-4">why you're cancelling</p>
+                                        <div class="text-left">
+                                            <div class="form-group mt-0 mb-2">
+                                                <input class="custom-radio" type="radio" id="radio_1" name="my-radio"
+                                                    value="1" checked>
+                                                <label for="radio_1" class="font-15-light">
+                                                    <span></span> Not require now
+                                                </label>
+                                            </div>
+                                            <div class="form-group mt-0 mb-2">
+                                                <input class="custom-radio" type="radio" id="radio_2" name="my-radio"
+                                                    value="1">
+                                                <label for="radio_2" class="font-15-light">
+                                                    <span></span> Subscribing competitor's plan
+                                                </label>
+                                            </div>
+                                            <div class="form-group mt-0 mb-2">
+                                                <input class="custom-radio" type="radio" id="radio_3" name="my-radio"
+                                                    value="1">
+                                                <label for="radio_3" class="font-15-light">
+                                                    <span></span> Other reason
+                                                </label>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-md-12 col-lg-6">
+                                                    <div class="form-group mt-0 mb-2">
+                                                        <textarea rows="3" class="form-control font-14-medium mb-4"
+                                                            placeholder="write Here.."></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-0">
+                                                <div class="col-md-12 col-lg-6">
+
+                                                    <button type="submit" class="btn btn-blue font-15-light"
+                                                        data-toggle="modal" data-target=".bs-example-modal-new">Submit
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn btn-dark font-15-light confirm-cancel">Cancel</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade bs-example-modal-new">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-4">
+                    <p>Are you sure your want to cancel your Membership?</p>
+                    <button type="button" class="btn btn-blue pt-1 pb-1 font-14-medium">Confirm</button>
+                    <button type="button" class="btn btn-dark pt-1 pb-1 font-14-medium" data-dismiss="modal">Go
+                        back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade edit-card-details">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header modal-header-bg">
+                    <button type="button" class="close arrow text-white" data-dismiss="modal">&times;</button>
+
+                    <h4 class=" font-18 text-white">Edit Card Details</h4>
+                </div>
+                <div class="modal-body p-4 pb-2">
+                    <form>
+                        <div class="row align-items-center d-flex mb-2">
+                            <div class="col-sm-12 mb-2">
+                                <div class="form-group">
+                                    <label or="NameOnCard">Card number</label>
+                                    <input id="NameOnCard" placeholder="Enter card Number"
+                                        class="form-control font-14-medium" type="text" maxlength="255"></input>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-2">
+                                <div class="form-group">
+                                    <label for="number">Name on card</label>
+                                    <input id="number" autocomplete="off" placeholder="Enter Name here"
+                                        class="font-14-medium form-control" type="text"></input>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-2">
+                                <div class="form-group">
+                                    <label for="type">Card type</label>
+                                    <select id="type" class="mt-0 font-14-medium form-control">
+                                        <option value="0" selected="">Select Card</option>
+                                        <option value="1">Master Card</option>
+                                        <option value="2">Visa Card</option>
+                                        <option value="3">American Card</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 mb-2">
+                                <div class="form-group">
+                                    <label for="date">Expiration</label>
+                                    <select id="date" class="mt-0 font-14-medium form-control">
+                                        <option value="0" selected="">Month</option>
+                                        <option value="1">2</option>
+                                        <option value="2">2</option>
+                                        <option value="3">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 mb-2">
+                                <div class="form-group">
+                                    <label for="month" class="">&nbsp;</label>
+                                    <select id="month" class="mt-0  font-14-medium form-control">
+                                        <option value="0" selected="">Year</option>
+                                        <option value="1">2</option>
+                                        <option value="2">2</option>
+                                        <option value="3">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 mb-2">
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input id="cvv" placeholder="CVV" class=" font-14-medium form-control"
+                                        type="text"></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-right">
+                                <a href="#" type="submit" data-dismiss="modal" class="btn btn-dark mr-2">Cancel</a>
+                                <a href="#" type="submit" class="btn btn-blue">Submit</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mCustomScrollbar.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $("#add-card").click(function () {
+            $(".show-card").toggleClass("hide-card");
+        });
+    </script>
+    <script>
+        $("#add-cancel").click(function () {
+            $(".show-cancel").toggleClass("hide-cancel");
+            $("#add-cancel").toggleClass("d-none");
+            // $("#add-cancel").fadeToggle(250);
+        });
+    </script>
+    <script>
+        $(".confirm-cancel").click(function () {
+            $(".show-cancel").toggleClass("hide-cancel");
+            // $("#add-cancel").fadeToggle(250);
+            $("#add-cancel").toggleClass("d-none");
+        });
+    </script>
+</body>
+
+</html>

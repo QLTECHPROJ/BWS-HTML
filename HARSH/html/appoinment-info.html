@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Appointment Information</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mCustomScrollbar.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        
+      
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="image/logo.png" class="img-fluid logo">
+                <img src="image/sidebar-small-logo.png" class="img-fluid small-logo">
+            </div>
+
+            <div class="sidebar-scroll mCustomScrollbar">
+
+                <ul class="list-unstyled components">
+                    <li class="nav-item">
+                        <a class="nav-link " href="dashboard.html">
+                            <i class="fa fa-tachometer"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="dashboard-user.html">
+                            <i class="fa fa-tachometer"></i>
+                            Dashboard-2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#appoin-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-copy"></i>
+                            Appoinment
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="appoin-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="appoinment-list.html">Appoinment list</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="session-info.html">Session Info</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="appoinment-info.html">Appoinment Info</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-list-alt"></i>
+                            Invoice
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="pageSubmenu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="invoice-list.html">Invoice List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="invoice-details.html">Invoice Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#audio-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-music"></i>
+                            Audios
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="audio-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="audio.html">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="audio-all.html">Audio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="playlist-all.html">Playlist</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#forum-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-comments"></i>
+                            Forum
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="forum-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="forum-add.html">Forum Question</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forum-details.html">Forum Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="billing-info.html">
+                            <i class="fa fa-money"></i>
+                            Billing and Order
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="feedback.html">
+                            <i class="fa fa-thumbs-up"></i>
+                            Feedback
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#resources-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-book"></i>
+                            Resources
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="resources-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="resource.html">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-apps.html">Apps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-books.html">Audio Books</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-documentaries.html">Documentaries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-podcasts.html">Podcasts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-websites.html">Websites</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="faq.html">
+                            <i class="fa fa-question-circle"></i>
+                            FAQ
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        
+        <!-- header -->
+
+        <header id="header">
+            <div class="justify-content-between d-flex">
+                <div class="justify-content-start d-flex">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fa fa-bars"></i>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="justify-content-end d-flex align-items-center">
+                    
+                    <div class="bell mr-4 dropdown" id="bell">
+                        <button type="button" class="btn btn-drope search-btn dropdown-toggle font-15-light"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa fa-bell-o more-btn " id="more-best"></i>
+                        <span class="badge badge-primary badge-pill">2</span>
+                        </button>
+
+                        <div class="dropdown-menu main-drop-menu border-0 two" x-placement="bottom-start"
+                            style="position: absolute; transform: translate3d(0px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+                            
+                            <h5 class="font-16 mb-4">Notifications</h5>
+                            <ul>
+                                <li>
+                                    <div class="not-data">
+                                        <div class="not-img text-center text-white">
+                                            I
+                                        </div>
+                                        <div class="not-content">
+                                            <h5 class="font-16">Invoice</h5>
+                                            <span class="font-14-medium">Invoice sent to yor mail.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="not-data">
+                                        <div class="not-img text-center text-white">
+                                            F
+                                        </div>
+                                        <div class="not-content">
+                                            <h5 class="font-16">Forum</h5>
+                                            <span class="font-14-medium">@maria replied to your question.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-image ">
+                        <img src="image/user.png" class="img-fluid">
+                    </div>
+                    <div class="dropdown mr-3">
+                        <button type="button" class="btn btn-drope search-btn dropdown-toggle font-15-light"
+                            data-toggle="dropdown" aria-expanded="false">
+                            John
+                        </button>
+
+                        <div class="dropdown-menu main-drop-menu border-0" x-placement="bottom-start"
+                            style="position: absolute; transform: translate3d(0px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+                            <a class="dropdown-item font-15-light mb-1" href="profile.html">Profile</a>
+                            <a class="dropdown-item font-15-light" href="setting.html"> Setting</a>
+                            <a class="dropdown-item font-15-light" href="index.html"> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="content-main">
+                <div id="appointment-info" class="container"><br>
+                    <div class="justify-content-between small-d-block d-flex mb-4">
+                        <h2 class="font-22-bold">Appointment Details</h2>
+                        <ol class="breadcrumb font-14-medium">
+                            <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                            <li class="breadcrumb-item active">Appointment Info.</li>
+                        </ol>
+                    </div>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav inside-up-tab mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link font-16 active" data-toggle="tab" href="#details">Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-16" data-toggle="tab" href="#audio">Audio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-16" data-toggle="tab" href="#report">Booklet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-16" data-toggle="tab" href="#review">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-16" data-toggle="tab" href="#pdf">PDF</a>
+                        </li>
+                    </ul>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row-p-0">
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane container p-0 active" id="details">
+                                        <div class="card-woborder-padding two ">
+                                        <h2 class="font-16 mb-3">Emotional Empowerment Program Session 1</h2>
+                                        <p class="font-15-light">This is your first step toward emotional
+                                            empowerment and happiness. Your first appointment is a 1 hour session
+                                            designed to discover what your concerns are, your goals for your dream
+                                            brain are, whether you are suffering from burnout or your brain is in
+                                            survival mode, evaluate the depth of your negative patterns and
+                                            perception and to identify what your facilitator needs to address in
+                                            order to achieve the best possible results for eliminating, Burnout,
+                                            Depression, Anxiety, PTSD, Anger, Worry, Stress, Negativity, Insomnia,
+                                            Mental and Emotional Illness to name a few. The first hour of your
+                                            discovery session is free of charge, in the next hour, we facilitate
+                                            your session. Once we are satisfied that we have achieved a successful
+                                            result, the investment for this session would be $ 220.00. The following
+                                            sessions are at $220.00. Our Emotional Empowerment Program is on average
+                                            11 sessions over 11 weeks.</p>
+                                        <hr class="">
+                                        <div class="row align-items-center d-flex mb-4">
+                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 xs-mb-4">
+                                                <div class="form-group">
+                                                    <label class="font-14"><i class="fa fa-user mr-1"></i>
+                                                        Practitioner</label>
+                                                    <h3 class="font-16"><b>John Smith</b></h3>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 xs-mb-4">
+                                                <div class="form-group">
+                                                    <label class="font-14"><i class="fa fa-calendar mr-1"></i>
+                                                        Date</label>
+                                                    <h3 class="font-16">21 April 2020</h3>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 xs-mb-4">
+                                                <div class="form-group">
+                                                    <label class="font-14"><i class="fa fa-clock-o mr-1"></i>
+                                                        Time</label>
+                                                    <h3 class="font-16">12:00 AM</h3>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-xl-6 col-lg-4 col-md-6 col-sm-6 xs-mb-4 text-m-left text-right">
+                                                <button class="btn btn-warning font-15-light" type="button">Join Video
+                                                    call</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="row align-items-center d-flex">
+                                            <div class="col-12">
+                                                <button class="btn btn-blue mr-2" type="button">Reschedule</button>
+                                                <span id="add-cancel" class="btn btn-dark mr-2">Cancel</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="card-woborder-padding two show-cancel mt-4">
+                                        <div class="text-left">
+                                            <h4 class="font-18 mb-2">OH! NO! LET US KNOW</h4>
+                                            <p class="font-15 mb-4">why you're cancelling</p>
+                                            <div class="text-left">
+                                                <div class="form-group mt-0 mb-2">
+                                                    <input class="custom-radio" type="radio" id="radio_1"
+                                                        name="my-radio" value="1" checked>
+                                                    <label for="radio_1" class="font-15-light">
+                                                        <span></span> Not require now
+                                                    </label>
+                                                </div>
+                                                <div class="form-group mt-0 mb-2">
+                                                    <input class="custom-radio" type="radio" id="radio_2"
+                                                        name="my-radio" value="1">
+                                                    <label for="radio_2" class="font-15-light">
+                                                        <span></span> Subscribing competitor's plan
+                                                    </label>
+                                                </div>
+                                                <div class="form-group mt-0 mb-2">
+                                                    <input class="custom-radio" type="radio" id="radio_3"
+                                                        name="my-radio" value="1">
+                                                    <label for="radio_3" class="font-15-light">
+                                                        <span></span> Other reason
+                                                    </label>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-md-12 col-lg-6">
+                                                        <div class="form-group mt-0 mb-2">
+                                                            <textarea rows="3" class="form-control font-14-medium mb-4" placeholder="write Here.."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-0">
+                                                    <div class="col-md-12 col-lg-6">
+                                                        
+                                                <button type="submit" class="btn btn-blue font-15-light" data-toggle="modal" data-target=".bs-example-modal-new">Submit </button>
+                                                <button type="button" class="btn btn-dark font-15-light confirm-cancel">Cancel</button>
+                                                    </div>
+                                                </div>
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="tab-pane container p-0 fade" id="audio">
+                                        <div class="card-woborder-padding two ">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-11 col-lg-11">
+                                                <div class="inline-block">
+                                                    <div class="list-img-width">
+                                                        <div class="audio-blog">
+                                                            <img src="image/aud-8.jpg" class="img-fluid side-image">
+                                                            <div class="play play-1">
+                                                                <i class="fa fa-play"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-detail-width">
+                                                        <a href="#" class="p-0 main-heading mb-2 d-block ">Emotional
+                                                            Empowerment
+                                                            Program 1</a>
+                                                        <h5 class="font-12-light">Listen that one before Emotional
+                                                            Empowerment
+                                                            Program 2</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-1 col-lg-1 text-right text-small-center">
+                                                <i class="fa fa-chevron-right d-sm-inline d-none mr-4"></i>
+                                                <i class="fa fa-chevron-down d-inline d-sm-none mr-4"></i>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container p-0 fade" id="report">
+                                        <div class="card-woborder-padding two ">
+                                        <div class="card-woborder-padding two ">
+                                        <h2 class="font-16 mb-3">Emotional Empowerment Program Session 1</h2>
+                                        <p class="font-15-light mb-4">This is your first step toward emotional
+                                            empowerment and happiness. Your first appointment is a 1 hour session
+                                            designed to discover what your concerns are, your goals for your dream
+                                            brain are, whether you are suffering from burnout or your brain is in
+                                            survival mode, evaluate the depth of your negative patterns and
+                                            perception and to identify what your facilitator needs to address in
+                                            order to achieve the best possible results for eliminating, Burnout,
+                                            Depression, Anxiety, PTSD, Anger.</p>
+
+                                        <div class=" justify-content-start align-items-end d-flex">
+                                            <button class="btn btn-dark mr-2" type="button">Fill form</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="tab-pane container p-0 fade" id="review">
+                                        <div class="card-woborder-padding two ">
+                                        <div class="row align-items-center d-flex">
+                                            <div class="col-md-12 col-lg-6 mb-4">
+                                                <form>
+                                                    <div class="star_rating text-left d-flex mb-3">
+                                                        <fieldset class="rating star">
+                                                            <input type="radio" id="field6_star5" name="rating2"
+                                                                value="5" /><label class="full"
+                                                                for="field6_star5"></label>
+                                                            <input type="radio" id="field6_star4" name="rating2"
+                                                                value="4" /><label class="full"
+                                                                for="field6_star4"></label>
+                                                            <input type="radio" id="field6_star3" name="rating2"
+                                                                value="3" /><label class="full"
+                                                                for="field6_star3"></label>
+                                                            <input type="radio" id="field6_star2" name="rating2"
+                                                                value="2" /><label class="full"
+                                                                for="field6_star2"></label>
+                                                            <input type="radio" id="field6_star1" name="rating2"
+                                                                value="1" /><label class="full"
+                                                                for="field6_star1"></label>
+                                                        </fieldset>
+                                                    </div>
+                                                    <textarea rows="2" class="form-control mb-4 font-14-medium"
+                                                        placeholder="write Here.."></textarea>
+
+                                                    <div class=" justify-content-start align-items-end d-flex">
+                                                        <button class="btn btn-dark mr-2" type="button">Submit</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <img src="image/feedback-side-image.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container p-0 fade" id="pdf">
+                                        <div class="card-woborder-padding two ">
+
+                                        <h2 class="font-16 mb-3">Emotional Empowerment Program Session 1</h2>
+                                        <p class="font-15-light mb-4">This is your first step toward emotional
+                                            empowerment and happiness. Your first appointment is a 1 hour session
+                                            designed to discover what your concerns are, your goals for your dream
+                                            brain are, whether you are suffering from burnout or your brain is in
+                                            survival mode, evaluate the depth of your negative patterns and
+                                            perception and to identify what your facilitator needs to address in
+                                            order to achieve the best possible results for eliminating, Burnout,
+                                            Depression, Anxiety, PTSD, Anger.</p>
+                                        <div class="pdf-data">
+                                            <a href="#" download><span>Download</span><span>PDF</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                </div>
+                            </div>
+                            
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade bs-example-modal-new">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-4">
+                    <p>Are you sure your want to cancel your Membership?</p>
+                    <button type="button" class="btn btn-blue pt-1 pb-1 font-14-medium">Confirm</button>
+                    <button type="button" class="btn btn-dark pt-1 pb-1 font-14-medium" data-dismiss="modal">Go
+                        back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mCustomScrollbar.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        $("#add-cancel").click(function () {
+            $(".show-cancel").toggleClass("hide-cancel");
+            $("#add-cancel").toggleClass("d-none");
+            // $("#add-cancel").fadeToggle(250);
+        });
+    </script>
+    <script>
+        $(".confirm-cancel").click(function () {
+            $(".show-cancel").toggleClass("hide-cancel");
+            // $("#add-cancel").fadeToggle(250);
+            $("#add-cancel").toggleClass("d-none");
+        });
+    </script>
+</body>
+
+</html>

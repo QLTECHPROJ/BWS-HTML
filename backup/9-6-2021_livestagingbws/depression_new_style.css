@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+a{ color:#005baa }
+
+p { margin: 0; padding: 10px 0; }
+
+body{font-family: 'Montserrat', sans-serif; line-height: 34px; font-weight: 400 }
+
+header { position: relative; left: 0; top: 0; width: 100%;z-index:9999;	transition: all ease .4s } 
+
+
+
+h1, .h1 { font-size: 45px; margin: 10px 0; font-family: 'Montserrat',sans-serif; font-weight: 700; color: #333; }
+
+h2, .h2 { font-family: 'Montserrat',sans-serif;font-style: normal; font-size: 30px; text-transform: none;line-height:40px; color:#333; letter-spacing: 2px; }
+
+h3, .h3 { font-size: 25px ; font-family: 'Montserrat',sans-serif;color: #333; letter-spacing:2px }
+
+h4, .h4 { font-size: 21px; margin: 10px 0; font-family: 'Montserrat',sans-serif; font-weight: 400; color: #333; }
+
+h5, .h5 { font-size: 18px; margin: 10px 0; font-family: 'Montserrat',sans-serif; color: #333; }
+
+h6, .h6 { font-size: 18px; margin: 10px 0; font-family: 'Montserrat',sans-serif; font-weight: normal; color: #333;  }
+
+.header_top { padding: 10px 0; background: #fff; }
+
+.htsocial_left {display: inline-block; width: auto; margin:0;}
+
+.htsocial_left li { display: inline-block; vertical-align: middle; list-style: none }
+
+.htsocial_left li a { display: inline-block; vertical-align: middle;width: auto; margin:0 9px; padding: 0; color:#005baa;}
+
+.htsocial_left li a:hover { color:#f89552 }
+
+.htsocial_left li:first-child a { margin-left: 0; }
+
+.header-topright { float: right; }
+
+.htcall { color: #005baa; font-weight: bold; font-size: 20px; line-height: 24px; }
+
+.htcall i { display: inline-block; transform: rotate(90deg); margin-right: 15px; }
+
+
+
+.logo { width: auto; padding: 0; }
+
+nav.navbar.navbar-expand-xl.navbar-light { padding: 0; }
+
+.header_main { background: rgba(255, 255,255, 0.2); }
+
+header.sticky .header_top{ display: none}
+
+header.sticky .header_main { background: #005baa; }
+
+header.sticky .header_main .btn-trans { border-color: #fff; color: #fff }
+header.sticky .header_main .btn-trans:hover{ border-color: #f89552; background: #f89552; }
+.depression_popvideo .youtube iframe  {  width: 100% }
+
+/*.btn-trans { float: right; }*/
+
+
+
+/*banner section*/
+
+.banner_sec { position: relative; /*background: none !important; margin-top: 55px;*/  }
+
+.breadcrumb { background: transparent; padding: 0; }
+
+.banner_content h2 { font-size: 40px; line-height: 50px; }
+
+.banner_content h2 strong span { color: #f89552 }
+
+.banner_content h5 { font-size: 23px; font-weight: 500; line-height: 37px; margin-top: 0;}
+
+.breadcrumb-item a { color: #fff; }
+
+.breadcrumb-item.active { color: #f89552 }
+
+.banner_content {  padding-top: 30px; }
+
+.blockquote  { padding: 0 10px 10px; border-left:10px solid #fff; color: #fff; width: 75%; margin:48px 0 0 }
+
+.blockquote p { font-style: italic; font-size: 17px; padding: 0 0 5px 0; } 
+
+.blockquote h5 { color: #fff; font-weight: bold; margin: 5px 0 0; }
+
+.banner_sec video { width: 100%; height: 100%;margin-top: 55px; object-fit: cover; position: relative;  min-height: 755px; display: inline-block; vertical-align: middle; }
+
+.banner_sec:before { content:""; position:absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65);z-index: 9 }
+
+.banner_cntbxmain { position: absolute; left: 0; top: 18%; width: 100%;padding:22px 0 0; z-index: 99; }
+
+.banner_content .btn-main { width:46%; margin-right: 20px; }
+
+.btn-main {background-color: #f89552; border: 1px solid #f89552; color: #fff; padding:18px 40px; text-transform: uppercase;  line-height: 1.2; -webkit-transition: all 0.5s ease-out;  -moz-transition: all 0.5s ease-out; -ms-transition: all 0.5s ease-out; -o-transition: all 0.5s ease-out; transition: all 0.5s ease-out; font-family: "Montserrat", sans-serif; letter-spacing: 1px; border-radius: 50px; font-weight: 600; display: inline-block; text-align: center; }
+
+.btn-main:hover {background: #fff; color:#f89552; text-decoration: none; }
+.whitebg  { border-color: #fff; color:#fff; background: transparent;  }
+.whitebg:hover { color:#fff; background: #f89552; border-color: #f89552  }
+.btn-trans { background: transparent; color: #f89552; }
+
+.btn-trans:hover { background:#f89552 ; color: #fff; border-color: #f89552 }
+
+.bookbtn  { margin-left:11px; padding: 18px 17px; }
+
+ul.navbar-nav { display: inline-flex }
+
+
+
+.text-orange { color: #f89552  }
+
+.text-blue { color: #005baa }
+
+
+
+/*button slider arrow css */
+
+button.slick-prev.slick-arrow, button.slick-next.slick-arrow, .owl-prev, .owl-next { top: 100%; transform: none; line-height: 0; margin: 0;
+padding: 0; height: auto; padding-top: 0 }
+
+button.slick-prev.slick-arrow, .owl-prev {  left:43%; }
+
+button.slick-next.slick-arrow, .owl-next { right:43%; }
+
+button.slick-prev.slick-arrow:before, button.slick-next.slick-arrow:before, .owl-prev:before, .owl-next:before {  content: "";  width: 52px; height: 25px; background-position: center center; background-size: contain;display: inline-block; transition: all ease .4s; filter: grayscale(100%); }
+
+button.slick-prev.slick-arrow:before,  .owl-prev:before { background: url('../images/iconsmall-left.png') no-repeat; }
+
+button.slick-next.slick-arrow:before, .owl-next:before  { background: url('../images/iconsmall-right.png') no-repeat; }
+
+button.slick-next.slick-arrow:focus,button.slick-prev.slick-arrow { outline: none; }
+/*arrow slider css end*/
+
+/*=========================================== depression page ================================================*/
+
+.depression_landingnewpage section { padding:50px 0;  font-weight: 400; }
+
+.asseein_listimg li img {filter: grayscale(100%);}
+
+.asseein_listimg li:hover img {filter: none;}
+.symotomstwocolrow { margin-bottom: 30px }
+.symotomstwocolrow:last-child { margin-bottom: 0 }
+
+section.depressiontab_sec.menuu.sticky-top { padding: 0; }
+
+.depressiontab_sec .deprestabmenu{ background: #f7f7f7; border-radius: 5px; border: none;width: 100% }
+
+.depressiontab_sec .deprestabmenu li { text-align: center; display: table; margin: 0 auto; }
+
+.deprestabmenu li  .nav-link { border: none; border-bottom:none; border-radius: 0; color: #404040; font-weight: 600;
+
+    font-size: 18px;padding: 15px 20px; position: relative;}
+
+.deprestabmenu li .nav-link.active {border: none; background: transparent }
+
+.deprestabmenu li .nav-link:before { content: ""; width: 100%; height: 3px; background:#005baa; position: absolute; left: 0; bottom: 0; opacity: 0; border-radius: 5px }
+
+.deprestabmenu li .nav-link:hover:before, .deprestabmenu li .nav-link.active:before { opacity: 1 }
+
+ul.navbar-nav.m-auto.deprestabmenu li .nav-link:hover, ul.navbar-nav.m-auto.deprestabmenu li .nav-link.active { color:#005baa ; text-decoration: none }
+
+.brain-rightimg { overflow-x: hidden; }
+
+.brain-rightimg.brain-bgimg:after { right: -290px; left: auto; transform: rotate(3deg) translateY(-75%);top: 75%;}
+.whitbgbrain:after { background: url(../images/white_breainimg.png) no-repeat;  }
+
+
+.brain-bgimg {position: relative;}
+
+.brain-bgimg:after { content: ""; position: absolute; left:-262px; top: 50%; width: 476px; height: 416px; background: url(../images/Brain.png) no-repeat; transform: rotate(6deg) translateY(-50%);  background-size: contain; }
+
+.brain-rightimg.brain-bgimg.brainrightopimg:after {transform: rotate(6deg) translateY(0); top:0;}
+
+.symotoms_cntbx p { font-size: 16px;line-height: 34px }
+
+.morebtn { color: #f89552; font-weight: 600; font-size: 18px;  }
+
+.depression_landingnewpage .symotoms_sec_two { background-size: 100% !important; background-position: top center !important; padding: 160px 0 50px; }
+
+section.bwsworks_Sec { padding-bottom: 0 }
+.bwsworks_btnbx { text-align: center }
+.bwsworks_Sec .btn-main {   margin-right: 15px; width: 34%; display: inline-block }
+.bwsworks_btnbx .btn-main i { margin-left: 10px }
+.clientstaticesimg { display: inline-block; vertical-align: middle; width: auto; margin-top: 18px; }
+.spadiffbx { width: 100%; display: inline-block; vertical-align: middle; padding: 30px; box-shadow: 0 1px 5px rgb(0,0,0,0.55); min-height: 208px; margin-bottom: 30px; border-radius: 10px; }
+
+section.anxiety_depsec.text-center { padding-top: 20px; }
+
+.anxiety_depsec .container { max-width: 100%; }
+
+.anxitey_cnttitleslider h3 { color: #005baa; font-weight: bold; font-size: 45px; line-height:50px; }
+
+.anxitey_cnttitleslider h3:hover { color:#f89552  }
+
+.anxietyslidbx { display: inline-block; vertical-align: middle; width: auto; position: relative; padding: 0 25px; }
+
+.anxietyslidbx:before { content: ""; position: absolute; left: 0; top: 0; width:8px; height: 100%; background: #005baa; }
+.anxitey_cnttitleslider   .slick-slide { height: auto }
+
+
+section.listenstory_sec  { padding-bottom: 0 }
+
+.listentabbx_sec .nav-tabs { display: table; margin: 0 auto; width: auto; border: none; }
+
+.listentabbx_sec .nav-tabs li { display: inline-block }
+
+.listtabcntbx { background: #fbfbfb; padding:40px 0 ;}
+
+.listentabbx_sec .nav-tabs .nav-link { border: none; color: #333}
+
+.listentabbx_sec .nav-tabs .nav-item.show .nav-link, .listentabbx_sec .nav-tabs .nav-link.active { border: none; background: #fbfbfb;     font-weight: 600; color: #005baa }
+
+.listentabbx_sec .nav-tabs .nav-link:focus, .listentabbx_sec .nav-tabs .nav-link:hover { border: none; }
+
+.listentabbx_sec button.slick-next.slick-arrow, .owl-next { right: 27% }
+
+.listentabbx_sec button.slick-prev.slick-arrow, .listentabbx_sec button.slick-next.slick-arrow, .owl-prev, .owl-next {  top: auto; bottom:0; width: auto;  transform: none }
+
+.listtabcntbx .tab-content { padding-bottom: 35px; }
+
+.videotestimonialtabslider  button.slick-prev.slick-arrow, .videotestimonialtabslider  .owl-prev { left: 63%; padding-top: 0; }
+
+.videotestimonialtabslider  button.slick-next.slick-arrow, .videotestimonialtabslider  .owl-next { right: 23%; padding-top: 0; }
+
+.tabtestimoimg{  width: 100px; height: 100px; border-radius: 100%; overflow: hidden; display: table; margin: 0 auto; }
+
+.tabtestimoimg img { width: 100px; height:100px; }
+.tabtestimocnt, .casestudie_slider,.videoslidbx  {  padding-bottom: 35px; }
+.spadifference_sec.brain-bgimg:before  {left:-335px;}
+.videotestmonialtslidimg .youtube img { width: 100% }
+
+
+.meetteam_sec  { background: #fbfbfb; position: relative; overflow: hidden; }
+
+.meetimg img { width: 100%; height: auto}
+
+.meetquote_bx img {  width: auto; display: inline-block; }
+
+.meetteam_sec:before {content: ""; position: absolute;left: 0; top: 0; width: 27%; height: 100%;  background: #fff; }
+.meetteam_sec.brain-rightimg.brain-bgimg.brainrightopimg:after {  top: -24px;}
+.meetimg:before {  left: 0; top: 0;}
+.meetimg { display: inline-block; width: 100%; position: relative; padding-top: 65px; padding-left: 45px; }
+
+.meetimg:before, .meetimg:after { content: ""; position: absolute; background: url('../images/dots_bgimg.png') no-repeat; width: 160px; height: 160px; z-index: -1;}
+
+.meetimg:before { left: 0; top: 0 }
+
+.meetimg:after{ bottom: -30px; right: -70px; }
+
+.meetquote_bx { display: inline-block; vertical-align: middle; width: 80px; height: 80px; background:#005baa; border-radius: 100%;line-height: 78px; position: absolute; top:30px; right: 0; z-index: 99; padding-top: 0;}
+
+.meetamimg { position: relative; z-index: 99 }
+
+section.support_friendfamily_sec  { padding-top:160px; background-size: 100% !important; background-position: top center !important; }
+
+.resourceslidebxmain{ display: inline-block; vertical-align:middle; width: 100%; border-right: 10px; text-align: left; background: #f7f7f7; padding:25px; border-radius: 10px; min-height: 598px; box-shadow: 0 2px 5px rgba(0,0,0,0.5);}
+
+.resource_slider { padding-bottom: 24px; }
+
+.resource_slider  .slick-slide { margin: 0 15px; padding: 3px; }
+
+.respourceslidimg{ display: inline-block; vertical-align: middle; width: 100%; }
+
+.respourceslidimg img { width: 100%; }
+
+.resourceslidecnt{ padding: 15px 0 0; }
+
+.txt-infotag { display: inline-block; vertical-align: middle; width: 84px; padding: 5px 10px; color: #fff; background: #f19e9c; border-radius: 5px; font-size: 14px; line-height: 20px; text-align: center; }
+
+.resourceslidecnt h4 { line-height: 36px; margin: 10px 0 0; }
+
+ul.resircetipslist { list-style: none; padding: 0; margin:10px 0; column-count: 2; position: relative; }
+
+ul.resircetipslist:before{ content: ""; position: absolute; left: -7px; width: 2px; height: 100%; display: inline-block; right: 0; margin: 0 auto; background: #b3b3b3; }
+
+.resourceslidecnt p { font-size: 15px; line-height: 24px; }
+
+.resircetipslist li { font-size: 13px; line-height: 20px; margin: 0 0 10px; display: inline-block; vertical-align: top; }
+
+.resourceslidecnt .morebtn  { color: #005baa }
+
+.resourceslidecnt .morebtn:hover { color: #f89552 }
+
+.resourcebtn { display: inline-block; vertical-align: middle; margin-top: 75px; }
+
+
+.youtube .play-button { top: 50%;  left: 50%; transform: translate3d(-50%, -50%, 0); position: absolute; cursor: pointer; width: 101px;    height: 101px; z-index: 1;  background: url(../images/PlayButton.png) no-repeat; }
+
+
+
+.faq_accordionbx { padding: 0; margin: 0; }
+
+.faq_sec.brain-bgimg:before{ left: auto; right:0; display: none }
+
+.faq_sec .card-header button { text-align: left; color: #005baa; }
+
+.card {  margin-bottom: 20px; padding: 20px; }
+
+.card-header { background: transparent; border: none;padding:0 35px 0 0; height: 100%; vertical-align: middle; width: 100%; min-height: 68px;    display: table; position: relative }
+
+.card-header .collapsed{ display: table-cell; vertical-align: middle; height: 100%; padding: 0; text-align: left; }
+
+.faq_accordion .card-body { padding: 0; }
+
+.btn.focus, .btn:focus { box-shadow: none } 
+
+.accordian-div .accordion .card .card-header button.collapsed { color: #303030 ; }
+
+.accordian-div .accordion .card::before{content: unset !important;}
+
+.accordian-div .accordion .card .card-header .btn.btn-link::before { position: absolute; top: 0; right: 20px; content: '\f068' !important;font-family: 'Font Awesome 5 Free'; line-height: 58px;font-weight: 900;font-style: normal; }
+
+.accordian-div .accordion .card .card-header .btn.btn-link.collapsed::before { position: absolute; top: 0; right: 20px; content: '\f067' !important; font-family: 'Font Awesome 5 Free'; line-height: 58px;color: #303030 !important;font-weight: 900; font-style: normal; }
+
+.onestsession_introductorysec{background:#f7f7f7}
+.onesession_img { display: inline-block; vertical-align: middle; width: 87px; border-radius: 7px; overflow: hidden; }
+.onesession_cnt { display: inline-block; vertical-align: middle; width: 78%;  padding-left: 15px; text-align: left; }
+.onesession_cnt p { padding: 10px 0 0; line-height: 24px; }
+.onesession_intocntsec ul  { padding: 0 ; text-align: left}
+.onesession_intocntsec ul li { position: relative; list-style: none; padding-left: 33px; font-size: 16px; font-family: 'Montserrat';margin-bottom: 10px; font-weight: 400;	}
+.onesession_intocntsec ul li:before {margin-top: 0px; content: ""; position: absolute; top: 9px; left: 0; background-image: url(../images/tick-bws.png); background-repeat: no-repeat; height: 23px; width: 23px; }
+
+.introductory_sec { background: #005baa; text-align: center; padding: 25px; color: #fff; border-radius: 11px; }
+.introductory_sec h3 { color: #fff; text-transform: uppercase; }
+.introductory_sec p { font-size: 15px; line-height: 26px; }
+.introductory_sec .form-control { height: 50px; border-color: #fff; padding: 0 20px; }
+.form-control:focus { box-shadow: none }
+.introductory_sec form { margin-top: 15px; }
+.introductory_sec form .btn-main { text-transform: capitalize; padding: 18px 21px; }
+.introductory_sec .gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium { width: 100%; height: 50px;     border: 1px solid #fff; padding: 0 20px !important; border-radius: 5px; }
+.introductory_sec .gform_wrapper .gform_footer input.button, .introductory_sec .gform_wrapper .gform_footer input[type=submit], .introductory_sec .gform_wrapper .gform_page_footer input.button, .introductory_sec .gform_wrapper .gform_page_footer input[type=submit] { width: 100%; margin: 0; font-size: 15px; padding: 19px 13px; word-break: break-word; word-wrap: break-word; line-height: normal;     box-shadow: none; border: 1px solid #f89552; }
+.introductory_sec .gform_wrapper ul.gform_fields li.gfield { padding: 0; }
+.introductory_sec .gform_wrapper ul.gform_fields li#field_45_1  { text-align: center }
+.introductory_sec .gform_wrapper h3 { font-weight: 500 }
+.introductory_sec .gform_wrapper { margin: 0; }
+.introductory_sec .gform_wrapper label.gfield_label, .gform_wrapper legend.gfield_label { display: none }
+
+.casestudieslidebx{ display: inline-block; vertical-align:middle; width: 100%; position: relative; padding: 0 15px; }
+.casestudie_img { display: inline-block; vertical-align: middle; width: 100%; }
+.casestudie_img img { width: 100%; }
+.casestudies_cnt { position: absolute; left: 0; bottom: 0; padding-left: 37px; padding-right: 37px; padding-bottom: 16px; color:#fff; text-align: left;}
+.casestudies_cnt h2 a { color: #fff }
+.casestudies_cnt p { color: #fff; }
+.casestudies_cnt p a { color: #fff; }
+
+.videotestmonialtslidimg .youtube iframe { height: 100%; width: 100% !important;z-index: 9; position: relative;  }
+.videotestmonialtslidimg .youtube img { width: 100% }
+.featured-image { text-align: center; display: inline-block; }
+
+.bwsworks_Sec .btn-main:hover { border-color: #f89552  }
+
+.modal { z-index: 9999999 }
+.depression_popvideo .youtube iframe { width: 100%; height:350px;  z-index: 99; position: relative; }
+.depression_popvideo  .modal-dialog { top: 50%; transform: translate(-50%, -50%) !important; left: 50%; margin: 0; max-width: 640px;}
+button.close { position: absolute; right: 0; top: 0; color: #fff;  background: #f89552;  opacity: 1; width: 25px; height: 25px; padding: 0;
+border-radius: 100%; top: -10px; right: -10px; z-index: 99;    font-size: 15px; }
+.close:hover { opacity: 1 !important; border: none; outline: none; background: #f89552; color: #fff }
+.depression_popvideo .youtube { width: 100%; height: 350px; }
+.depression_popvideo .modal-content { padding: 5px; }
+
+.depression_popvideo .youtube img { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; height: 100%; 	}
+
+.modal-backdrop { z-index: 99999 }
+
+
+
+/*============================================ anxiety-landing-new page  ======================================*/
+.anxietylanding .banner_sec video  { min-height: 795px }
+
+/*===============================================================================================*/
+.ptsdlanding .banner_sec video  { min-height: 685px;    max-height: 700px; }
+
+
+/*=================================================== footer ======================================================*/
+
+.footer_main { background-size: cover !important; background-position: center top !important; padding: 70px 0px; color: #fff;
+    font-weight: 400; }
+
+footer a { color: #fff }
+
+.footer_logo { display: inline-block; vertical-align: middle; width: auto }
+
+.footer_contbx { position: relative; padding-left: 25px; }
+
+.fconticon { position: absolute; left: 0; top: 0; line-height: normal;}
+
+.footer_contbx h5 { margin: 0; color: #fff; }
+
+.footer_contbx p { padding-top: 0; font-size: 12px; line-height: 20px; }
+
+.callicon i { transform: rotate(90deg); display: inline-block }
+
+.footer_contbx a { font-size: 12px; line-height: 20px; }
+.footer_contbx a:hover{ color: #f89552 }
+.footermenulist_bx { color: #fff; margin-top: 25px; }
+.footermenulist_bx h4 { color:#fff;	font-weight: bold }
+.footer_menulist { margin: 0; padding: 0; list-style: none }
+.footer_menulist li a {  color: #fff; font-size: 14px; line-height:20px; padding: 10px 0;  font-weight: 400; }
+.footer_bottom { padding: 50px 0; text-align: left; font-weight: 400 }
+.footer_socialbx h4 { color: #fff; font-weight: 600; }
+.footer_bottom p { font-size: 14px;line-height: 24px }
+
+.footer_bottom ul { justify-content: space-between; display: flex;vertical-align: middle; list-style: none; padding: 0; }
+
+.footer_bottom ul li { display: inline-block; vertical-align: middle; font-size: 16px; font-weight: 300; font-family: 'Montserrat'; }
+.gform_wrapper.gf_browser_chrome .gfield_error input[type=email], .gform_wrapper.gf_browser_chrome .gfield_error input[type=number], .gform_wrapper.gf_browser_chrome .gfield_error input[type=password], .gform_wrapper.gf_browser_chrome .gfield_error input[type=tel], .gform_wrapper.gf_browser_chrome .gfield_error input[type=text], .gform_wrapper.gf_browser_chrome .gfield_error input[type=url], .gform_wrapper.gf_browser_chrome .gfield_error select, .gform_wrapper.gf_browser_chrome .gfield_error textarea, .gform_wrapper.gf_browser_chrome li.gfield_error.field_sublabel_above .ginput_complex input[type=text], .gform_wrapper.gform_validation_error .top_label input.medium, .gform_wrapper.gform_validation_error .top_label select.medium { width: 100% !important }
+.gform_wrapper .field_description_below .gfield_description { padding-top: 0 !important }
+.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning { background: transparent !important; border: none !important; }
+
+.videotestmonialtslidimg .youtube img { width: 100%; height: 100%}
+.footer_socialbx { text-align: right; color: #fff;}
+.footersocialtxt { padding: 0; margin-bottom: 0; }
+.footersocialtxt li{ padding: 0; list-style: none; display: inline-block; vertical-align: middle; }
+.footersocialtxt li a { display: inline-block; vertical-align: middle; width: auto; margin: 0 5px; font-size: 16px; color: #fff; }
+.fsocialtopbx {  position: absolute; right: 0;  bottom: 0;}
+.footer_menu_secbx { position: relative; }
+
+/*responsive*/
+
+@media(min-width:1025px){
+button.slick-next.slick-arrow:hover:before, .owl-next:hover:before { background:url('../images/Icon_long_right.png') no-repeat; width: 84px; filter:none}
+
+button.slick-prev.slick-arrow:hover:before,  .owl-prev:hover:before {background:url('../images/Icon_long_left.png') no-repeat ; width: 84px; filter:none}
+}
+@media(max-width: 1199px){
+
+header .navbar-light .navbar-toggler{ border-color: #fff; background:transparent; }
+
+.btn-trans { float: none; margin-left: 0; margin-right: 0; display: table; margin:0 auto;}
+
+.header_main .navbar-light .navbar-toggler-icon { background: no-repeat; color: #fff; line-height: 31px; }
+
+.banner_content { padding-top: 13px; }
+
+.banner_content h5 { font-size: 21px;  }
+
+}
+
+@media(max-width: 1024px){
+
+h2, .h2{ font-size: 28px; line-height: 30px }
+
+button.slick-prev.slick-arrow, .owl-prev { left: 39%; }
+
+button.slick-next.slick-arrow, .owl-next  { right: 39%; }
+
+.btn-main { padding: 18px 15px; }
+
+.logo{ padding: 0; }
+
+.brain-bgimg:after {display: none}
+
+.depression_landingnewpage section { padding: 30px 0; }
+
+.banner_content h2 { font-size: 30px; line-height: 40px; }
+
+.banner_content h5 { font-size: 19px; line-height: 29px; margin: 0; }
+.banner_sec video { min-height: 734px }
+.asseein_listimg li { margin: 0 10px; }
+.meeteam_slider_bx  { padding-bottom:15px; }
+.resourceslidebxmain { padding: 19px;min-height: 648px; }
+.resource_slider { padding-bottom: 28px; }
+.anxitey_cnttitleslider h3 { font-size: 40px; line-height: 40px; }
+.introductory_sec { padding: 10px; }
+.introductory_sec .gform_wrapper .gform_footer input.button, .introductory_sec .gform_wrapper .gform_footer input[type=submit], .introductory_sec .gform_wrapper .gform_page_footer input.button, .introductory_sec .gform_wrapper .gform_page_footer input[type=submit] { font-size: 13px; }
+.depression_landingnewpage .symotoms_sec_two { padding: 120px 0 30px; }
+
+.footer_main{ padding: 30px 0 }
+
+.bwsworks_Sec .btn-main { width: 31%; padding: 20px 10px; margin-right: 5px; }
+.bwsworks_Sec .btn-main:last-child { margin-right: 0; }
+.onesession_cnt {  width: 66%; }
+.support-rowbx { margin-bottom: 15px; }
+.support-rowbx:last-child { margin-bottom:0  }
+button.slick-prev.slick-arrow, button.slick-next.slick-arrow, .owl-prev, .owl-next { filter: brightness(0.5) }
+
+/*anxiety-landing-new*/
+.anxietylanding .banner_sec video  { min-height: 704px; }
+
+/*ptsd-landing-new*/
+.ptsdlanding .banner_sec video { min-height: 735px; max-height: none;}
+
+}
+
+
+
+@media(max-width: 991px){
+
+.deprestabmenu li .nav-link { font-size: 14px; line-height: 24px; padding: 11px 5px }
+
+.banner_cntbxmain { top: 14%; }
+
+.blockquote { width: 85% }
+
+.symortoms-img img { width: 100%; }
+
+.bwsworksimg img { width: 100%; }
+
+.listentabbx_sec .nav-tabs .nav-link { padding: 7px; }
+
+.resourceslidebxmain { padding: 20px; min-height: 618px }
+
+.onesession_cnt { width: 69%; }
+
+.support_friendimg img { width: 100%; }
+.introductory_sec .gform_wrapper .gform_footer input.button, .introductory_sec .gform_wrapper .gform_footer input[type=submit], .introductory_sec .gform_wrapper .gform_page_footer input.button, .introductory_sec .gform_wrapper .gform_page_footer input[type=submit]{ font-size: 11px; padding: 19px 5px; }
+
+.banner_content .btn-main { width: 47%; margin-right: 12px; padding: 20px 7px; }
+.banner_content .btn-main:last-child { margin-right: 0 }
+.support-rowbx { margin-bottom: 35px; }
+
+}
+
+
+
+@media(max-width: 767px){
+
+h1, .h1	{ font-size: 30px; line-height: 30px; }
+
+h2, .h2 { font-size: 25px; line-height: 30px }
+
+h3, .h3 { font-size: 20px; line-height: 25px }
+
+h4, .h4 { font-size: 18px; line-height: 25px }
+
+h5, .h5 { font-size: 16px; line-height: 25px }
+
+h6, .h6 { font-size: 15px; line-height: 25px }
+
+.btn-main { padding: 10px 20px; }
+
+p {font-size: 14px; line-height: 30px; }
+
+.htsocial_left { padding-left:0}
+
+.banner_content h2 { font-size: 25px; line-height: 35px; }
+.banner_content h2 br { display: none; }
+.banner_content .btn-main  { width: 48%; margin-bottom: 15px; padding: 10px 5px; margin-right: 6px; }
+.banner_sec video { min-height: 624px; }
+.banner_content h5 { font-size: 18px; }
+
+.banner_content h5 br { display: none }
+
+.blockquote { width: 100%; margin: 10px 0 0; }	
+
+.banner_cntbxmain {  top: 21%; }
+
+.depression_landingnewpage section { padding: 20px 0; text-align: center }
+
+.depression_landingnewpage .symotoms_sec_two{ padding:70px 0 20px; }
+
+.symotoms_cntbx{ text-align: center; padding: 15px 0; }
+.symotoms_cntbx:last-child { padding-bottom: 0 }
+.symotoms_cntbx ul { text-align: left; display: table; margin: 0 auto; }
+.symortoms-img { margin-top: 25px }
+.symotomstwocolrow { margin-bottom: 20px; }
+
+.spadiffbx { padding: 20px; min-height: 171px }
+
+.anxitey_cnttitleslider h3{ font-size: 28px; line-height: 30px; margin: 0; }
+
+.meetimg:after  {right: 0}
+
+button.slick-prev.slick-arrow, .owl-prev { left: 29%; }
+
+section.meetteam_sec  { padding-bottom: 60px }
+
+.meetteam_sec:before {display: none}
+
+.resourceslidecnt h4 { line-height: 27px; }
+
+ul.resircetipslist:before { display: none }
+
+ul.resircetipslist { column-count: 1 }
+
+.card { padding: 10px; }
+
+.card-header { min-height: auto }
+
+.accordian-div .accordion .card .card-header .btn.btn-link.collapsed::before { line-height: 23px; right: 10px }
+.accordian-div .accordion .card .card-header .btn.btn-link::before { right: 10px; line-height: 23px; }
+
+.introductory_sec { padding: 20px; margin-top: 15px;margin-bottom: 30px; }
+
+.introductory_sec h3 { margin-bottom: 0 }
+
+.supportfriendcnt {text-align: center;}
+
+section.depressiontab_sec.menuu.sticky-top {  top: 91px !important}
+
+.depressiontab_sec .navbar{ background:#fff; display: inline-block; width: 100%; text-align: right; }
+.navbar-toggler:focus, .navbar-toggler:hover{ outline: none }
+.depressiontab_sec .navbar-light .navbar-toggler-icon { background: none; position: relative; line-height: 30px; }
+
+.depressiontab_sec .navbar-light .navbar-toggler { float: none;  border: 2px solid #005baa; background: #f0f0f0; }
+
+.depressiontab_sec  .navbar-light .navbar-toggler-icon:before { content: "\f053"; left: 0;top: 0; font-style: normal; font-weight: 900;font-family: 'Font Awesome 5 Free'; font-size: 17px; }
+
+.depressiontab_sec .deprestabmenu li { border-bottom: 1px solid #ccc; width: 100%; }
+
+.depressiontab_sec .deprestabmenu li:last-child { border-bottom: none }
+.videotestimonialtabslider button.slick-next.slick-arrow, .videotestimonialtabslider .owl-next { right: 32%; }
+.videotestimonialtabslider button.slick-prev.slick-arrow, .videotestimonialtabslider .owl-prev { left: 32%; }
+
+.resourceslidecnt h2 { font-size: 20px; line-height: 24px; }
+.resourceslidecnt ul { padding-left:11px; }
+.resourceslidecnt ul li { font-size: 14px; line-height: 24px; }
+.resourceslidebxmain { padding: 10px; min-height: 627px; }
+.meetquote_bx { width: 50px; height: 50px; line-height: 48px; }
+.faq_sec .faq_accordion { margin-top: 25px; text-align: left; }
+section.support_friendfamily_sec { padding-top: 80px; }
+.support_friendfamily_sec .supportfriendcnt { margin: 20px 0; }
+.support_friendfamily_sec:last-child .supportfriendcnt { margin-bottom: 0; }
+.casestudies_cnt h2 { font-size: 20px; }
+.casestudies_cnt { padding-left: 30px; padding-right: 30px }
+.meetimg:before { top: 20px; }
+.meetimg { padding-top: 35px;padding-right: 26px; }
+.introductory_sec .gform_wrapper .gform_footer input.button, .introductory_sec .gform_wrapper .gform_footer input[type=submit], .introductory_sec .gform_wrapper .gform_page_footer input.button, .introductory_sec .gform_wrapper .gform_page_footer input[type=submit] { min-height: auto; padding: 9px 5px; }
+
+.footer_main { padding: 20px 0; background: url(../images/responsive-footer-bg-new.jpg) no-repeat !important; background-size: cover !important;}
+
+.footer_logo { margin-bottom: 15px; }
+
+.footer_contbx { margin-bottom: 15px; }
+
+.footer_menulist { column-count: 2; }
+
+.footermenulist_bx { margin-bottom: 15px }
+
+.footermenulist_bx h4 { margin-top: 0; }
+
+.footer_bottom { padding: 20px 0; }
+
+.footer_bottom ul { padding: 0; display: inline-block }
+.fsocialtopbx { position: relative }
+.footer_socialbx { text-align: left }
+.footersocialtxt li:first-child a { margin-left: 0 }
+
+
+.videotestmonialtslidimg { margin-bottom: 15px; }
+.resource_slider { padding-bottom: 13px; }
+.resourcebtn { margin-top: 45px }
+.meetcntbx  { margin-top: 15px; }
+.videoslidbx { padding-bottom: 0 }
+.videotestimonialtabslider  { margin-bottom: 25px }
+.tabtestimocnt, .casestudie_slider{ padding-bottom: 15px;  margin-bottom: 35px;}
+.tabtesimonail_slider { margin-bottom: 25px; }
+.depression_popvideo .modal-dialog { max-width: none; width: 95%; }
+.breadcrumb { margin-bottom: 0 }
+.youtube .play-button  { width: 50px; height: 50px; background-size: contain }
+.bwsworks_Sec .btn-main { width: 70%; margin-right: 0; }
+.support_friendimg { margin-top: 15px; }
+.form-footer.text-center {  line-height: 24px; }
+.depression_popvideo  .modal-body{ padding: 5px; }
+button.close { z-index: 999 }
+.anxietylanding .banner_sec video { min-height: 644px; }
+
+/*ptsd-landing-new*/
+.ptsdlanding .banner_sec video { min-height: 658px; }
+.navbar-collapse.collapse.show.displaynonemob { display: none }
+.navbar-collapse.displayshowmob.collapse {display: block}
+.navbar-collapse.displayshowmob.collapse:not(.show) { display: none }
+}
+
+
+
+@media(max-width: 575px){
+
+.spadiffbx { min-height: auto }
+
+.listtabcntbx { padding: 20px 0 0; }
+
+.listtabcntbx .tab-content { padding-bottom: 58px;}
+
+.meetquote_bx { width: 50px; height: 50px; line-height: 58px; top: 0;    right: 5px; }
+
+.meetimg{ padding: 0; }
+
+.meetteam_sec:before { display: none }
+
+.meetimg:before, .meetimg:after  { display: none }
+
+button.slick-next.slick-arrow, .owl-next { right: 29%; }
+
+.faq_accordion { margin-top: 15px; }
+
+.meetcntbx.text-left { text-align: center !important; }
+
+.introductory_sec form .btn-main{ padding: 10px; }
+
+.listenstory_sec  h2 { word-wrap: break-word; word-break: break-word; }
+
+.anxitey_cnttitleslider h3 { font-size: 19px; line-height: 20px; }
+
+.spadifference_sec .row > div:last-child .spadiffbx { margin-bottom: 0; }
+
+.listentabbx_sec .nav-tabs .nav-link { font-size: 14px; padding: 6px; }
+
+/*.banner_sec video { display: none; }
+
+.banner_sec{ background: url('../images/depression_Top_Banner.png') no-repeat; background-size: cover !important; background-position: center center !important; }
+
+.banner_cntbxmain { top: 0; position: relative; padding: 180px 0 30px; }**/
+.banner_sec video {  min-height: 648px;}
+.htsocial_left li a { margin: 0 5px; font-size: 14px; }
+.htcall { font-size: 15px; }
+.htcall i { margin-right: 8px; }
+.banner_content h2 {  font-size: 20px; line-height: 30px;}
+.banner_content h5 { font-size: 15px;}
+.banner_content .btn-main { padding: 12px 7px; width: 100%; margin-right: 0}
+.banner_content p { line-height: 24px; }
+
+.banner_sec { overflow-x: hidden }
+.blockquote p{ font-size: 15px; line-height:24px; }
+section.support_friendfamily_sec { padding-top: 50px;}
+.depression_popvideo .youtube {  height: 280px }
+.depression_popvideo .youtube iframe{ height: 100% }
+
+}
+
+@media(max-width: 475px){
+
+.logo { width: 100px; }
+.banner_content h2 {  font-size:18px;}
+section.depressiontab_sec.menuu.sticky-top { top:79px !important; }
+.banner_sec video {  min-height: 646px; }
+.resourceslidebxmain{ min-height: auto; }
+
+button.slick-next.slick-arrow, .owl-next { right: 23% }
+button.slick-prev.slick-arrow, .owl-prev { left: 23%; }
+.banner_cntbxmain { top: 18%; }
+.bwsworks_Sec .btn-main { width: 100%; }
+/*anxietylanding*/
+.anxietylanding .banner_sec video { min-height: 662px; }
+/*ptsd-landing-new*/
+.ptsdlanding .banner_sec video { min-height: 658px; }
+
+
+}
+@media(max-width: 420px){
+section.depressiontab_sec.menuu.sticky-top { top: 79px !important; }
+.videoslidbx .youtube{ height: 260px !important }
+}
+@media(max-width: 397px){
+
+.banner_content p{ line-height: 29px; }
+
+.banner_content h2 br { display: none }
+
+.banner_content .btn-main { margin-bottom: 10px }
+
+.blockquote p {font-size: 14px;line-height: 28px;}
+.banner_sec video {  min-height: 757px; }
+
+/*anxietylanding*/
+.anxietylanding .banner_sec video { min-height: 734px; }
+/*ptsd-landing-new*/
+.ptsdlanding .banner_sec video { min-height: 703px; }
+
+
+
+}
+
+@media(max-width:375px){
+.banner_content { word-break: break-word }
+.onesession_cnt { width: 68%; }
+.banner_sec video { min-height: 797px }
+.footer_menulist { column-count: 1 }
+
+
+.videotestimonialtabslider button.slick-next.slick-arrow, .videotestimonialtabslider .owl-next { right: 22% }
+.videotestimonialtabslider button.slick-prev.slick-arrow, .videotestimonialtabslider .owl-prev { left: 22% }
+.depression_popvideo .youtube {  height: 190px; }
+.videoslidbx .youtube { height: 210px !important; }
+
+/*anxietylanding*/
+.anxietylanding .banner_sec video { min-height: 784px;}
+.ptsdlanding .banner_sec video { min-height: 771px;}
+}
+@media(max-width:332px){
+.banner_sec video { min-height: 889px; }	
+.banner_content .btn-main { margin-bottom: 14px; }
+/*anxietylanding*/
+.anxietylanding .banner_sec video {  min-height: 824px; }
+.ptsdlanding .banner_sec video { min-height: 811px;}
+
+}

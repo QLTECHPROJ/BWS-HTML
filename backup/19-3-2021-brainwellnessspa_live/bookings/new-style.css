@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.header-main {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+.header-main .header-logo {
+    width: 170px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.header-main .header-content {
+    width: calc(100% - 175px);
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@media all and (max-width:575px) {
+    .header-main .header-logo {
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .header-main .header-content {
+        display: none !important;
+    }
+
+    .header-main .header-logo img {
+        width: 130px;
+    }
+
+    .contact-class .fa {
+        top: -2px !important;
+    }
+}
+
+@media all and (max-width:991px) {
+    .header-main .header-logo {
+        width: 120px;
+    }
+    .header-main .header-content {
+        width: calc(100% - 125px);
+    }
+}
+
+/*  */
+
+.contact-class.inner {
+    background-color: white !important;
+}
+
+.contact-class {
+    background: #015ba9;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-class span {
+    color: #015ba9;
+}
+
+.contact-class span.white {
+    color: #fff;
+}
+
+.contact-class .fa {
+    color: #ffffff;
+    background: #f3954a;
+    font-size: 13px;
+    height: 20px;
+    width: 20px;
+    padding: 4px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.contact-class a {
+    color: #f3954a;
+    text-decoration: none;
+}
+
+/*  */
+
+/* page banner */
+
+.page-banner {
+    background-image: url(https://brainwellnessspa.com.au/wp-content/themes/brainwellnessspa/assets/images/page-title-bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 59px 15px;
+    text-align: center;
+    font-size: 58px;
+    color: #ffffff !important
+}
+@media (max-width: 414px)
+{
+    .page-banner {
+        font-size: 1.5rem !important;
+    }
+}
+/* @media all and (max-width:991px) {
+    .page-banner {
+        font-size: 50px !important;
+    }
+}
+
+@media all and (max-width:767px) {
+    .page-banner {
+        font-size: 40px !important;
+    }
+}
+
+@media all and (max-width:575px) {
+    .page-banner {
+        font-size: 30px !important;
+    }
+} */
+
+
+/* icon bar */
+
+/***********************SELECT WIZARD START HERE**********************/
+
+/* #wrapper {
+    position: relative;
+    text-align: center;
+    margin: 40px 0;
+}
+
+#wrapper .baricon {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #ffffff;
+    font-size: 23px;
+    color: #a8a9aa;
+    border: 2px solid #a8a9aa;
+    cursor: pointer;
+}
+
+#wrapper .baricon.active {
+    border: 2px solid rgb(34, 194, 34);
+    color: rgb(34, 194, 34);
+}
+
+#wrapper .progress_bar {
+    width: 200px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #D8D8D8;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: -9px;
+}
+
+#wrapper .progress_bar.active {
+    background: rgb(34, 194, 34) !important;
+    background-color: rgb(34, 194, 34) !important;
+}
+
+#wrapper li#li1 {
+    width: 66px;
+    border: 1px solid rgb(34, 194, 34);
+    color: rgb(34, 194, 34);
+    position: relative;
+}
+
+
+#wrapper li#li2 {
+    width: 132px;
+    color: #D8D8D8;
+    position: relative;
+}
+
+@media all and (max-width:991px) {
+    #wrapper .progress_bar {
+        width: 21%;
+    }
+
+    .xl-mb-4 {
+        margin-bottom: 20px !important;
+    }
+}
+
+@media all and (max-width:767px) {
+    #wrapper .progress_bar {
+        width: 13%;
+    }
+
+    #wrapper li#li1 {
+        width: 35%;
+    }
+
+    #wrapper li#li2 {
+        width: 70% !important;
+    }
+}
+
+@media all and (max-width:480px) {
+    #wrapper .baricon {
+        width: 38px;
+        height: 38px;
+        line-height: 36px;
+        font-size: 20px;
+    }
+
+    #wrapper .progress_bar {
+        width: 12% !important;
+    }
+} */
+
+/* footer */
+
+footer {
+    background-image: url(https://brainwellnessspa.com.au/wp-content/themes/brainwellnessspa/assets/images/footer-bg.jpg) !important;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px !important;
+}
+footer .footer-data .sub-heading
+{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #fff !important;
+    text-decoration: none;
+    display: block;
+}
+footer .footer-data ul 
+{
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+footer .footer-data ul li
+{
+    margin-bottom: 10px;
+    display: block;
+}
+
+footer .footer-data ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+footer .footer-data.social ul li
+{
+    margin-bottom: 10px;
+    display: block;
+}
+footer .footer-data.social ul li .fa
+{
+    top: 3px;
+    left: 0;
+    background-color: #ffffff;
+    color: #005baa !important;
+    height: 19px;
+    width: 19px;
+    font-size: 12px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 10px;
+}
+footer .footer-data.social ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+footer .footer-data.social ul li .fa
+{
+    margin-right: 10px;
+}
+footer li a:hover {
+    color: #ffc010 !important;
+}
+
+footer .footer-data.address ul li i{
+    width: 20px;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 13px;
+    vertical-align: top;
+}
+footer .footer-data.address ul li .span{
+    width: calc(100% - 25px);
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+}
+footer .footer-logo
+{
+    width: 170px;
+}
+footer .footer-data.address ul li .span span{ 
+    font-weight: 500;
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+}
+footer .footer-data.address ul li .span a{ 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+footer .footer-data.address ul li:nth-child(3) i
+{
+    background-color: #ffffff;
+    height: 19px;
+    width: 19px;
+    color: #005baa !important;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 13px;
+    padding: 4px;
+}
+footer .footer-data.address ul li:nth-child(3) .span
+{
+    padding-left: 5px;
+}
+footer .footer-data.address p
+{
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+@media (max-width: 575px)
+{
+    footer .footer-data.address p
+    {
+        font-size: 16px !important;
+        margin-bottom: 5px !important;
+    }
+    footer .footer-data.address ul li .span span {
+        font-size: 13px !important;
+    }
+    footer .footer-data.address ul li i {
+        font-size: 25px !important;
+    }
+}
+footer .last-text
+{
+    margin-top: 35px !important;
+}
+footer .last-text a {
+    color: #fff ;
+    text-transform: none;
+}
+footer .last-text a:hover {
+    color: #ffc010 !important;
+}
+footer .last-text p
+{
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 0px !important;
+    font-weight: 500;
+    text-align: center;
+}
+.footer-bottom-content {
+    color: black;
+    font-size: 0.9rem;
+}
+.footer-bottom-content {
+    padding-top: 23px;
+    padding-bottom: 10px;
+}
+.footer-bottom-content .text-center {
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+.footer-bottom-content ul {
+    list-style: none;
+    margin-top: 15px;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.footer-bottom-content li {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 5px;
+    padding-bottom: 0;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+@media (max-width: 767px)
+{
+    .footer-bottom-content ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width:991px) {
+    .lg-mb-4
+    {
+        margin-bottom: 25px;
+    }
+    .text-large-center
+    {
+        text-align: center !important;
+    }
+}
+@media all and (max-width:767px) {
+    .md-mb-4
+    {
+        margin-bottom: 25px;
+    }
+    .text-medium-left
+    {
+        text-align: left !important;
+    }
+
+}
+@media all and (max-width:575px) {
+    .sm-mb-4
+    {
+        margin-bottom: 25px;
+    }
+}
+
+/* 26-11-20 */
+section.testimonial-section
+{
+    padding: 50px 0px 50px 0px;
+    background-color: #fefefe;
+}
+section.testimonial-section p
+{
+    font-style: italic;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+.title-main h2
+{
+    margin-bottom: 40px;
+    font-size: 3.4375rem;
+    font-weight: 300;
+    color: #005baa;
+    line-height: 1.2;
+    text-align: center;
+}
+.title-main h2 span
+{
+    font-weight: 700;
+    color: #005baa;
+    line-height: 1.2;
+}
+section.testimonial-section p span {
+    font-size: 16px;
+    font-style: normal;
+    color: #005baa;
+    font-weight: 700;
+    display: block;
+    text-align: center !important;
+}
+section.logo-section
+{
+    padding: 0px 0px 50px 0px;
+    background-color: #fff;
+}
+section.logo-section .img-main
+{
+    padding-left: 0px ;
+    margin-bottom:0 ;
+    text-align: center;
+}
+section.logo-section .img-box
+{
+    width: 156px;
+    text-align: center;
+    display: inline-block;
+}
+section.logo-section p {
+    color: #005baa;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 700;
+}
+@media all and (max-width:1200px)
+{
+    section.logo-section .img-box {
+        width: 186px;
+    }
+}
+@media all and (max-width:992px)
+{
+    .large-mb-2{
+        margin-bottom: 20px;
+    }
+    .testimonial-section .youtube.bookyoutubefirst iframe { height: 400px;}
+}
+@media(max-width:767px)
+{
+    section.logo-section .img-box {
+        width: 200px;
+        margin-bottom:10px;
+    }
+    section.testimonial-section {
+        padding: 25px 0px 25px 0px !important;
+    }
+    .title-main h2 {
+        margin-bottom: 20px !important;
+    }
+    .testimonial-section .youtube.bookyoutubefirst iframe {  height: 286px; }
+}
+@media(max-width:575px){
+    section.logo-section .img-box {
+        width: 150px !important;
+        margin-bottom: 10px;
+    }
+    section.testimonial-section {
+        padding: 20px 0px 20px 0px !important;
+    }
+    .title-main h2 {
+        font-size: 2rem !important;
+    }
+    .youtube iframe
+    {
+        height:200px;
+    }
+    .img-box img
+    {
+        width:80% !important;
+    }
+    section.logo-section {
+        padding: 0px 0px 20px 0px !important;
+    }
+    .testimonial-section .youtube.bookyoutubefirst iframe { height:309px; }
+}
+@media(max-width: 545px){
+  .testimonial-section .youtube.bookyoutubefirst iframe { height:278px; }   
+}
+@media(max-width: 495px){
+.testimonial-section .youtube.bookyoutubefirst iframe { height:257px; } 
+}
+@media(max-width: 430px) {
+.testimonial-section .youtube.bookyoutubefirst iframe { height: 227px !important; }
+}
+@media(max-width: 375px){
+.testimonial-section .youtube.bookyoutubefirst iframe { height: 181px !important; }
+.youtube iframe {  height: 173px;}
+}

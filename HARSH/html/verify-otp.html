@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Verify OTP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        
+        /* MY CSS */
+        .container {
+            height: 100vh;
+            -webkit-flex-flow: column wrap;
+            -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        /* Change autocomplete styles in WebKit */
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        select:-webkit-autofill,
+        select:-webkit-autofill:hover,
+        select:-webkit-autofill:focus {
+            border-bottom: 1px solid #fff !important;
+            -webkit-text-fill-color: white;
+            -webkit-box-shadow: none !important;
+            transition: background-color 5000s ease-in-out 0s !important;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="video/bg-video.mp4" type="video/mp4">
+    </video>
+    <div class="login">
+        <div class="container">
+            <div class="justify-content-center d-flex">
+                <div class="w-400px">
+                    <div class="login-data">
+                        <div class=" text-center top">
+                            <img src="image/logo.png" class="img-fluid login-logo mb-4">
+                            <h1 class="font-22 text-white mb-2">It's Great to see you!</h1>
+                            <span class="font-15-light text-white">Mobile Number</span>
+                        </div>
+
+                        <div class="form-wrapper">
+                            <form class="form">
+                                <div class="form-group mb-2 input-mobile">
+                                    <label class="form-label" for="otp">One Time Password</label>
+                                    <input id="otp" class="form-input mobile-input" autocomplete="off" type="text" />
+                                </div>
+                                <div class="text-left">
+                                    <small class="text-danger font-14-medium "></small>
+                                </div>
+                                <a href="dashboard.html" class="btn btn-dark btn-block my-btn mt-3 mb-1" type="submit">Let's go</a>
+                                <a href="#" class="text-right d-block text-white mt-3 font-12-light">Resend OTP!</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

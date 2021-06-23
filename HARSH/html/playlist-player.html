@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Playlist Player</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mCustomScrollbar.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="image/logo.png" class="img-fluid logo">
+                <img src="image/sidebar-small-logo.png" class="img-fluid small-logo">
+            </div>
+
+            <div class="sidebar-scroll mCustomScrollbar">
+
+                <ul class="list-unstyled components">
+                    <li class="nav-item">
+                        <a class="nav-link " href="dashboard.html">
+                            <i class="fa fa-tachometer"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="dashboard-user.html">
+                            <i class="fa fa-tachometer"></i>
+                            Dashboard-2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#appoin-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-copy"></i>
+                            Appoinment
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="appoin-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="appoinment-list.html">Appoinment list</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="session-info.html">Session Info</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="appoinment-info.html">Appoinment Info</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-list-alt"></i>
+                            Invoice
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="pageSubmenu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="invoice-list.html">Invoice List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="invoice-details.html">Invoice Details</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#audio-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-music"></i>
+                            Audios
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="audio-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="audio.html">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="audio-all.html">Audio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="playlist-all.html">Playlist</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#forum-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-comments"></i>
+                            Forum
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="forum-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="forum-add.html">Forum Question</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forum-details.html">Forum Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="billing-info.html">
+                            <i class="fa fa-money"></i>
+                            Billing and Order
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="feedback.html">
+                            <i class="fa fa-thumbs-up"></i>
+                            Feedback
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#resources-menu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed nav-link">
+                            <i class="fa fa-book"></i>
+                            Resources
+                        </a>
+
+                        <ul class="collapse list-unstyled nav nav-pills" id="resources-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="resource.html">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-apps.html">Apps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-books.html">Audio Books</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-documentaries.html">Documentaries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-podcasts.html">Podcasts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resource-websites.html">Websites</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="faq.html">
+                            <i class="fa fa-question-circle"></i>
+                            FAQ
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- header -->
+
+        <header id="header">
+            <div class="justify-content-between d-flex">
+                <div class="justify-content-start d-flex">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fa fa-bars"></i>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="justify-content-end d-flex align-items-center">
+                    <div class="bell mr-4 dropdown" id="bell">
+                        <button type="button" class="btn btn-drope search-btn dropdown-toggle font-15-light"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa fa-bell-o more-btn " id="more-best"></i>
+                        <span class="badge badge-primary badge-pill">2</span>
+                        </button>
+
+                        <div class="dropdown-menu main-drop-menu border-0 two" x-placement="bottom-start"
+                            style="position: absolute; transform: translate3d(0px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+                            
+                            <h5 class="font-16 mb-4">Notifications</h5>
+                            <ul>
+                                <li>
+                                    <div class="not-data">
+                                        <div class="not-img text-center text-white">
+                                            I
+                                        </div>
+                                        <div class="not-content">
+                                            <h5 class="font-16">Invoice</h5>
+                                            <span class="font-14-medium">Invoice sent to yor mail.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="not-data">
+                                        <div class="not-img text-center text-white">
+                                            F
+                                        </div>
+                                        <div class="not-content">
+                                            <h5 class="font-16">Forum</h5>
+                                            <span class="font-14-medium">@maria replied to your question.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-image ">
+                        <img src="image/user.png" class="img-fluid">
+                    </div>
+                    <div class="dropdown mr-3">
+                        <button type="button" class="btn btn-drope search-btn dropdown-toggle font-15-light"
+                            data-toggle="dropdown" aria-expanded="false">
+                            John
+                        </button>
+
+                        <div class="dropdown-menu main-drop-menu border-0" x-placement="bottom-start"
+                            style="position: absolute; transform: translate3d(0px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+                            <a class="dropdown-item font-15-light mb-1" href="profile.html">Profile</a>
+                            <a class="dropdown-item font-15-light" href="setting.html"> Setting</a>
+                            <a class="dropdown-item font-15-light" href="index.html"> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="content-main">
+                <div id="feedback" class="container"><br>
+                    <div class="justify-content-between small-d-block d-flex mb-4">
+                        <h2 class="main-heading">Ultimate FIFO Workers Survival Bundle</h2>
+                        <ol class="breadcrumb font-14-medium">
+                            <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                            <li class="breadcrumb-item active">Playlist</li>
+                        </ol>
+                    </div>
+
+                    <div class="card-woborder-padding two">
+                        <div class="audio-player">
+                            <div class="card-body playlist-data pt-0 px-0 pb-0">
+                                
+                                <p class="font-16-light mb-4">Being a FIFO worker can take a toll on your life. Away
+                                    from family and friends for weeks on end working long hours. This can leave you
+                                    feeling lonely, anxious and full of anger. The Ultimate FIFO Workers Survival Bundle
+                                    will help you cope with the stresses of working long hours away from home. This
+                                    bundle includes 11 programs to help you survive any work stresses</p>
+
+                                <div class="row align-items-center d-flex mb-4">
+                                    <div class="col-xl-5 col-lg-5 medium-mb-4">
+                                        <!-- <div class="p-0 m-0 text-center" id="now-playing">
+                                            <p class="font-italic mb-0">Now Playing: </p>
+                                            <p class="lead font-18-bold card-title" id="title"></p>
+                                        </div> -->
+                                        <div class="row align-items-center mx-0">
+                                            <div class="playlist-left">
+                                                <div class="transparent-black"></div>
+                                                <div class="edit-btn">
+                                                    <a href="playlist-details.html" class="btn">Edit</a>
+                                                </div>
+                                                <img id="thumbnail" class="img-fluid w-100" width=""
+                                                    src="image/playlist-img.jpg" alt="">
+                                                <div class="playlist-left-data text-left">
+                                                    <p class="text-white font-18-bold mb-2">Ultimate FIFO Workers
+                                                        Survival Bundle</p>
+                                                    <p class="text-white font-14-light mb-0">50 Songs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="playlist-right-data">
+                                            <div class="row align-items-center d-flex">
+                                                <div class="col-md-3 md-mb-4">
+                                                    <div class="align-items-center md-justify-center justify-content-start d-flex  mx-0 ">
+                                                        <i id="prev-button" class="fa fa-step-backward  mr-3"
+                                                            aria-hidden="true"></i>
+                                                        <i id="play-button" class="fa fa-play-circle-o play-pause mr-2"
+                                                            aria-hidden="true"></i>
+                                                        <i id="pause-button"
+                                                            class="fa fa-pause-circle-o play-pause d-none mr-2"
+                                                            aria-hidden="true"></i>
+                                                        <i id="next-button" class="fa fa-step-forward  ml-2 mr-3"
+                                                            aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div
+                                                        class="progress-bar progress col-12 ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                                        <span tabindex="0"
+                                                            class="ui-slider-handle ui-corner-all ui-state-default"
+                                                            style="left: 0%;">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-7 col-lg-7">
+                                        <div class="d-flex align-items-center justify-content-between mr-2 mb-2">
+                                        </div>
+
+                                        <div class="mCustomScrollbar playlist-scroll">
+                                            <ul class="playlist list-group ">
+                                                <li audio_url="https://archive.org/download/Purring_/AnxiousPurringmp3.ogg"
+                                                    class="align-items-center d-flex active list-group-item playlist-item font-15-light">
+                                                    <img src="image/introductory-session.jpg" class="img-fluid mr-3"
+                                                        width="50">
+                                                    <div class="d-block w-100">
+                                                        <p class="text-white font-16-light mb-0 mr-"><b>Anxiity</b></p>
+                                                            <p class="text-white font-14-light mb-0">Lorum ipsum</p>
+                                                    </div>
+                                                    <div class="audio-minute text-right justify-content-end d-flex">
+                                                        <p class="text-white font-14-light mb-0">03:45</p>
+                                                    </div>
+
+                                                </li>
+                                                <li audio_url="https://archive.org/download/Purring_/AnxiousPurringmp3.ogg"
+                                                    class="align-items-center d-flex list-group-item playlist-item font-15-light">
+                                                    <img src="image/introductory-session.jpg" class="img-fluid mr-3"
+                                                        width="50">
+                                                    <div class="d-block w-100">
+                                                        <p class="text-white font-16-light mb-0 mr-"><b>Anger</b></p>
+                                                            <p class="text-white font-14-light mb-0">Lorum ipsum</p>
+                                                    </div>
+                                                    <div class="audio-minute text-right justify-content-end d-flex">
+                                                        <p class="text-white font-14-light mb-0">03:45</p>
+                                                    </div>
+
+                                                </li>
+                                                <li audio_url="https://archive.org/download/Purring_/AnxiousPurringmp3.ogg"
+                                                    class="align-items-center d-flex list-group-item playlist-item font-15-light">
+                                                    <img src="image/introductory-session.jpg" class="img-fluid mr-3"
+                                                        width="50">
+                                                    <div class="d-block w-100">
+                                                        <p class="text-white font-16-light mb-0 mr-"><b>Motivation</b></p>
+                                                            <p class="text-white font-14-light mb-0">Lorum ipsum</p>
+                                                    </div>
+                                                    <div class="audio-minute text-right justify-content-end d-flex">
+                                                        <p class="text-white font-14-light mb-0">03:45</p>
+                                                    </div>
+
+                                                </li>
+                                                <li audio_url="https://archive.org/download/Purring_/AnxiousPurringmp3.ogg"
+                                                    class="align-items-center d-flex list-group-item playlist-item font-15-light">
+                                                    <img src="image/introductory-session.jpg" class="img-fluid mr-3"
+                                                        width="50">
+                                                    <div class="d-block w-100">
+                                                        <p class="text-white font-16-light mb-0 mr-"><b>OCD</b></p>
+                                                            <p class="text-white font-14-light mb-0">Lorum ipsum</p>
+                                                    </div>
+                                                    <div class="audio-minute text-right justify-content-end d-flex">
+                                                        <p class="text-white font-14-light mb-0">03:45</p>
+                                                    </div>
+
+                                                </li>
+                                                <li audio_url="https://archive.org/download/Purring_/AnxiousPurringmp3.ogg"
+                                                    class="align-items-center d-flex list-group-item playlist-item font-15-light">
+                                                    <img src="image/introductory-session.jpg" class="img-fluid mr-3"
+                                                        width="50">
+                                                    <div class="d-block w-100">
+                                                        <p class="text-white font-16-light mb-0 mr-"><b>Meditation</b></p>
+                                                            <p class="text-white font-14-light mb-0">Lorum ipsum</p>
+                                                    </div>
+                                                    <div class="audio-minute text-right justify-content-end d-flex">
+                                                        <p class="text-white font-14-light mb-0">03:45</p>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <audio id="audio-player" class="d-none"
+                            src="https://archive.org/download/TabbyCatPurr/Purring.ogg" type="audio/mp3"
+                            controls="controls"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mCustomScrollbar.js"></script>
+        <script src="js/jquery-ui-slider.js"></script>
+        <script src="js/audioPlayer.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
