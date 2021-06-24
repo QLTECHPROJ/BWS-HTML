@@ -500,7 +500,7 @@ header .dropdown:hover .dropdown-menu li a{ border: none; padding: 5px 5px;white
 .float-right.show-for-small-only {
     display: block !important;
 }
-header .navbar-light .navbar-toggler { display: none }
+/*header .navbar-light .navbar-toggler { display: none }*/
 html.js.whatinput-types-initial.whatinput-types-touch {
     margin-top: 0 !important;
 }

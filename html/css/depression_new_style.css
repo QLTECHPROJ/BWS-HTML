@@ -251,7 +251,7 @@ button.close { background: #f00; width: 24px; height: 24px; display: inline-bloc
 .explright-arrow:last-child:before, .explright-arrow:nth-child(4):before { display: none; }
 
 .experienceloobx { display: inline-block; vertical-align: middle;width: 100%; margin-bottom: 30px; }
-.exlookiocn { width: 190px; height: 190px; background: #fbfbfb; border-radius: 100%; display: inline-block; vertical-align: middle;  line-height: normal; position: relative; box-shadow: 0 0 5px rgb(0 0 0 / 55%); }
+.exlookiocn { width: 190px; height: 190px; background: #fbfbfb; border-radius: 100%; display: inline-block; vertical-align: middle;  line-height: normal; position: relative; box-shadow: 0 0 5px rgb(0 0 0 / 55%); transition: all ease .4s; }
 .experienceloobx img { position: relative; z-index: 999;  top: 50%; transform: translateY(-50%);}
 .exlookiocn:before{ content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #005baa; z-index: 99; display: inline-block; width: 150px; height: 150px; border-radius: 100%; vertical-align: middle; }
 .bgorange:before { background: #f89552; }
@@ -297,6 +297,8 @@ section.testimonial_slider_sec {  padding:50px 0 70px; text-align: center;}
 .resourcecntbx .morebtn  { position: absolute; left: 20px; bottom: 20px; color: #005baa; }
 .resourcecntbx .morebtn:hover { color: #f89552; }
 .hresourcebtn { margin-top: 25px;    width: 250px; }
+.modal-backdrop {z-index: 9999;}
+.modal { z-index: 99999; }
 /*footer*/
 .footer_main { background-size: cover !important; background-position: center top !important; padding: 70px 0px; color: #fff; }
 footer a { color: #fff }
@@ -326,12 +328,16 @@ footer a { color: #fff }
 .fsocialtopbx { position: absolute; right: 0; bottom: 0; }
 
 /*responsive*/
+@media(max-width: 1025px){
+.exlookiocn:hover {  transform: scale(1.1); }
+}
 @media(max-width: 1199px){
 header .navbar-light .navbar-toggler{ border-color: #f89552; background: #f89552; }
 .btn-trans { float: none; margin-left: 0; margin-right: 15px }
 
 .banner_content { padding-top: 13px; }
 .banner_content h5 { font-size: 21px;  }
+.wecancntbxcol h3 { font-size: 20px; }
 }
 @media(max-width: 1024px){
 h2, .h2{ font-size: 28px; line-height: 30px }
