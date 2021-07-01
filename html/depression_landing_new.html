@@ -1913,6 +1913,26 @@ $('.tabtesimonail_slider').slick({
     }
   ]
 });
+$('.casestudie_slider').slick({
+ infinite: true,
+ slidesToShow: 1,
+  slidesToScroll:1,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   $('.tabslidercommon').slick('setPosition');
