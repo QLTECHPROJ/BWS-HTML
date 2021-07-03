@@ -188,27 +188,36 @@ section.faq_sec  { padding-top: 160px; background-size: 100% !important; backgro
 /*************************************** EEP page *********************************************************/
 /*header*/
 .headerright { float: right; width: auto; padding: 13px 0; }
-
+.header-navigation { display: inline-block; vertical-align: middle; width: auto;}
+.headerright .bookbtn { padding: 14px 22px;    float: right; }
 /*banner*/
 .eep_banner_sec{ background-size: cover !important; background-position: center center !important; padding: 50px 0; }
 .eep_banner_sec .breadcrumb-item a { color: #707070; }
 .breadcrumb-item+.breadcrumb-item::before { content: ">"; }
 .eepbannertitle { font-size: 40px; line-height: 50px; color: #707070; }
 .eep_banner_sec h2 { font-size: 40px;line-height: 40px; margin: 10px 0 0; }
+.eepbanner_btn { margin-top: 30px; }
 .eepbanner_btn .btn-main { margin-right: 15px; }
 
-.eep_landingnewpage section { padding: 60px 0 ; }
+.eep_landingnewpage section { padding:40px 0 ; }
+.eepbanner_cnt { padding: 40px 0; }
 .list_ultxt { margin: 0; padding: 0; list-style: none;}
 .list_ultxt li { position: relative; padding:0 0 0 30px; display: inline-block; vertical-align: middle; width: 100%; font-size: 16px; line-height: 24px; margin-bottom: 15px; }
 .list_ultxt li:before { content: ""; position: absolute; left: 0; top:5px; width: 21px; height: 21px; background: url('../images/tick-bws.png') no-repeat; }
 .eep_landingnewpage .brain-bgimg:before { margin-top: 45px; }
 
-.empiconsymotomsbx { display: inline-block; vertical-align: middle; width: 100%; text-align: center; transition: all ease .4s;    margin-bottom: 30px; }
-.empiocsysmbx {display: inline-block; vertical-align: middle; width: 100px; height: 100px; background: #fbfbfb; border-radius: 10px;}
+.eep_landingnewpage .symotomstwocolrow { margin-bottom: 30px; }
+.eep_landingnewpage .symotomstwocolrow:last-child { margin-bottom: 0; }
+
+.empiconsymotomsbx { display: inline-block; vertical-align: middle; width: 100%; text-align: center; transition: all ease .4s; margin-bottom: 40px; }
+.empicon_symotoms_sec { margin-top: 15px; }
+.empiocsysmbx {display: inline-block; vertical-align: middle; width: 100px; height: 100px; background: #fbfbfb; border-radius: 5px; line-height: 98px; }
 .empiconsymotomsbx h6 { font-weight: 600; margin: 15px 0 0; font-size: 16px;}
 .empiconsymotomsbx:hover .empiocsysmbx { background: #005baa; }
+.empiconsymotomsbx:hover .empiocsysmbx img { filter: brightness(0) invert(1); }
 .empiconsymotomsbx:hover { text-decoration: none; }
 
+.eep_landingnewpage .eep_content_sec { background-size: 100% !important; background-position: top center !important; padding: 182px 0 50px; margin-top: 40px; }
 .eep_content_sec  h2 { margin-bottom: 30px; }
 .eepcntbx { background: #fbfbfb; padding: 20px; text-align: left; transition: all ease .4s;}
 .eepcntbxnum { font-size: 80px; line-height: 80px; color: #ececec; font-weight: bold; }
@@ -232,16 +241,21 @@ section.faq_sec  { padding-top: 160px; background-size: 100% !important; backgro
 .downloadbrousher_form_sec .introductory_sec .btn-main { margin-top: 20px; }
 .spadieep_secrow { display: table; margin: 0 auto; width: 80%; }
 .spadieep_secrow .spadiffbx { padding: 30px 20px; box-shadow: 0 1px 5px rgba(0,0,0,0.2); }
+.eep_landingnewpage .casestudieslidebx .casestudie_img { display: table; margin: 0 auto; }
 
 .eep_landingnewpage .spadifference_sec.brain-bgimg:before { left: -288px; }
+.eep_tabcntrowbx { margin-top: 20px; }
+.eep_tabimgbx img { width: 100%;  }
 
 .eep_landingnewpage .videotestimonialtabslider  { padding-bottom: 20px; }
 .eep_landingnewpage .videotestimonialtabslider button.slick-prev.slick-arrow, .videotestimonialtabslider .owl-prev { left: 43%; }
 .eep_landingnewpage .videotestimonialtabslider button.slick-next.slick-arrow, .videotestimonialtabslider .owl-next { right: 43%; }
-.NaturalandDrug_Free_Alternative_sec { background: #f7f7f7; position: relative;  margin-top: 60px; }
-.eepntld-rightimg { position: sticky; }
-.naturalanddrugimg { position: absolute;  right: 0; top:-143px; }
-.naturalanddrugimg img { width:96%; }
+.NaturalandDrug_Free_Alternative_sec { background: #f7f7f7; position: relative;  margin-top: 60px; padding: 0 !important; }
+.naturaldrug_cntbx { padding: 40px 0; }
+.eepntld-rightimg { position: sticky;  margin-top: -110px }
+.naturalanddrugimg { position: relative; right: 0; top: 0; height: 100%; width: 100%; display: inline-block;
+    vertical-align: middle; }
+.naturalanddrugimg img { width: 100%; position: absolute;right: 0; top: 0; height: 100%;}
 .NaturalandDrug_Free_Alternative_sec .naturaldrugbtn { margin-top: 20px; }
 .eep_landingnewpage .onestsession_introductorysec { background: #fff; }
 
@@ -252,7 +266,7 @@ footer a { color: #fff }
 .footer_contbx { position: relative; padding-left: 25px; }
 .fconticon { position: absolute; left: 0; top: 0; line-height: normal;}
 .footer_contbx h5 { margin: 0; color: #fff; }
-.footer_contbx p { padding-top: 0; font-size: 12px; line-height: 20px; }
+.footer_contbx p { padding-top: 0; font-size: 12px; line-height: 20px; color: #fff; }
 .callicon i { transform: rotate(90deg); display: inline-block }
 .footer_contbx a { font-size: 12px; line-height: 20px; }
 .footer_contbx a:hover{ color: #f89552 }
@@ -301,6 +315,35 @@ button.slick-next.slick-arrow, .owl-next  { right: 39%; }
 .footer_main{ padding: 30px 0 }
 
 /*eep*/
+
+h3, .h3 { font-size: 20px; line-height: 25px; }
+h4, .h4 { font-size: 18px; line-height: 24px; }
+
+
+.header-navigation { float: right; }
+.headerright .bookbtn { margin-right: 15px; float: none; margin-left: 0; }
+
+.eep_banner_sec { padding: 30px 0; }
+.eepbanner_cnt { padding: 30px 0; }
+.eepbannertitle {  font-size: 32px; line-height: 40px; }
+.eep_banner_sec h2 { font-size: 35px; line-height: 40px; }
+.eepbanner_btn { margin-top: 20px; }
+.eepbanner_btn .btn-main{ padding:15px 14px; margin-right: 9px; font-size: 15px; }
+
+.eep_landingnewpage section { padding: 30px 0; }
+
+.eep_landingnewpage .eep_content_sec { padding: 120px 0 30px; margin-top: 20px; }
+.eepcntbxnum { font-size: 60px; line-height: 60px; }
+
+.eep_slidtitletab { font-size: 14px; line-height: 20px; padding-bottom: 25px; }
+.eep_tabcntrowbx { margin-top: 15px; }
+
+.spadieep_secrow .spadiffbx  { padding: 20px 10px; }
+.onesession_cnt { width: 69%;}
+.eep_landingnewpage section.anxiety_depsec { padding-bottom: 40px; }
+.listentabbx_sec .nav-tabs .nav-link { padding: 10px 18px; }
+.naturaldrug_cntbx { padding: 30px 0; }
+.NaturalandDrug_Free_Alternative_sec .naturaldrugbtn{ margin-top: 10px; }
 
 }
 
@@ -370,8 +413,42 @@ section.depressiontab_sec.menuu.sticky-top {  top: 25% !important; }
 .footer_bottom ul { padding: 0; display: inline-block }
 
 
+button.slick-next.slick-arrow, .owl-next { right: 23%; }
+button.slick-prev.slick-arrow, .owl-prev { left: 23%; }
+
+/*eep*/
 
 
+.eep_banner_sec { padding: 20px 0; }
+.eep_banner_sec h2 { font-size: 30px; line-height: 40px; }
+.eepbannertitle { font-size: 26px; line-height: 34px; }
+.eepbanner_cnt { padding: 20px 0; }
+.eepbanner_cnt p { padding-bottom: 0; }
+.eepbanner_btn { margin-top: 10px; }
+.eepbanner_btn .btn-main  { padding: 10px 12px; font-size: 14px; margin-bottom: 5px; }
+
+.eep_landingnewpage section { padding: 20px 0; }
+
+.eepntld-rightimg { position: relative; margin-top: 0; }
+.eep_landingnewpage .eep_content_sec { padding: 90px 0 20px; margin-top: 0; }
+
+.eepcntbx { margin-bottom: 10px; padding: 10px; }
+
+.naturalanddrugimg { height: auto; }
+.naturalanddrugimg img { position: relative; top: 0; height: auto; }
+
+.onesession_intocntsec { margin-top: 20px; }
+.onesession_intocntsec h2 { margin-bottom: 14px; }
+.spadiffbx h4 { font-size: 15px; line-height: 24px; }
+.spadiffbx h4 br { display: none; }
+
+.eep_landingnewpage section.anxiety_depsec { padding-bottom:20px; }
+.NaturalandDrug_Free_Alternative_sec { margin-top: 20px; padding: 20px 0 !important; text-align: center; }
+.naturaldrug_cntbx { padding: 0; }
+}
+
+@media(max-width:608px){
+.headerright .bookbtn { margin-right:35px }
 }
 
 @media(max-width: 575px){
@@ -397,11 +474,16 @@ button.slick-next.slick-arrow, .owl-next { right: 29%; }
 .htcall { font-size: 15px; }
 .htcall i { margin-right: 8px; }
 
-}
-@media(max-width: 475px){
-.logo { width: 100px; }
+/*eep*/
+.headerright { padding-right: 15px; }
+.headerright .bookbtn  { font-size: 14px; padding: 10px 15px; }
+.eep_landingnewpage .listtabcntbx { padding: 20px 0; }
 
 }
+@media(max-width: 475px){
+.logo { width: 100px;  display: inline-block; padding: 4px 0;}
+
+} 
 @media(max-width: 397px){
 .banner_content p{ line-height: 29px; }
 .banner_content h2 br { display: none }
@@ -420,4 +502,7 @@ button.playicons {position: relative;
     display: table;
     margin: 70px auto 0;}
 
+/*eep*/
+.eep_banner_sec h2 { font-size: 25px; line-height: 30px; }
+.eepbannertitle { font-size: 21px; line-height: 30px; }
 }

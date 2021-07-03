@@ -27,10 +27,11 @@
 
 .navigation ul.menu>li.selected>a { position: relative; color: #f89552 }
 .navigation ul.menu li.sub .sub-menu { position: absolute; min-width: 100%; width: 230px; background: #fff; z-index: 5; opacity: 0; top: 100%; visibility: hidden; margin-top: 40px; display: block; pointer-events: auto;left: 50%; transform: translateX(-50%); }
-.navigation ul.menu > li.sub > .sub-menu:before { content: ""; position: absolute; left: 50%; transform: translateX(-50%); top:-19px;  width: 0; height: 0; border-left:19px solid transparent; border-right:19px solid transparent; border-bottom:19px solid #fff}
+/*.navigation ul.menu > li.sub > .sub-menu:before { content: ""; position: absolute; left: 50%; transform: translateX(-50%); top:-19px;  width: 0; height: 0; border-left:19px solid transparent; border-right:19px solid transparent; border-bottom:19px solid #fff}*/
+.navigation ul.menu > li.sub > .sub-menu:before{ content: ""; position: absolute; width: 0; height: 0; top: 0;left: 50%; box-sizing: border-box; border: 1em solid white; border-color: transparent transparent #ffffff #ffffff; transform-origin: 0 0; transform: rotate(135deg); box-shadow:-2px 2px 2px 0px rgba(0,0,0,0.1);     margin-left: 15px; }
 
-.navigation ul.menu > li.sub.megamenu:nth-child(2) > .sub-menu:before{ left: 27%;transform: translateX(-27%); }
-.navigation ul.menu > li.sub.megamenu:nth-child(3) > .sub-menu:before{ left: 38%;transform: translateX(-38%); }
+.navigation ul.menu > li.sub.megamenu:nth-child(2) > .sub-menu:before{ left:30%;transform: translateX(-30%) rotate(135deg); margin-left: 0;}
+.navigation ul.menu > li.sub.megamenu:nth-child(3) > .sub-menu:before{ left: 42%;transform: translateX(-42%) rotate(135deg);margin-left: 0; }
 .navigation ul.menu li.sub .sub-menu a { display: block; font-family: 'Montserrat', sans-serif; font-weight: 600; font-style: normal; font-size: 14px;line-height: 24px; text-transform: capitalize; color: #8C8B8B; padding-top: 20px; padding-bottom: 0;
     position: relative; letter-spacing: 1px;  outline: 0; }
 .navigation ul.menu .sub-menu li.selected>a { background:#f89552; color: #fff }
@@ -58,9 +59,8 @@
 .navigation ul.menu> li.menu-item.sub.megamenu {  position: static; }
 .navigation ul.menu li.sub .sub-menu > li { padding: 0 45px; }
 .navigation ul.menu> li.menu-item.sub.megamenu > ul> li{ padding: 0; }
-.navigation ul.menu li.sub:hover>.sub-menu { display: block!important; opacity: 1; visibility: visible; margin-top:31px; transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; -webkit-transition: all .5s ease;box-shadow:0 1px 4px rgba(0,0,0,0.2); }
-.navigation ul.menu li.sub.megamenu .sub-menu ul { display: inline-block; position: relative; width: 100%; opacity: 1; left: 0;
-    top: 0; transform: none; box-shadow: none; margin: 0; padding: 0; visibility: visible;}
+.navigation ul.menu li.sub:hover>.sub-menu { display: block!important; opacity: 1; visibility: visible; margin-top:19px; transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; -webkit-transition: all .5s ease;box-shadow:0 1px 4px rgba(0,0,0,0.2); }
+.navigation ul.menu li.sub.megamenu .sub-menu ul { display: inline-block; position: relative; width: 100%; opacity: 1; left: 0; top: 0; transform: none; box-shadow: none; margin: 0; padding: 0; visibility: visible;}
 ul.sub-menu.main-menu.petmenubx > li { width: 33.33%; float: left; padding: 0 27px; }
 /*.menusubbx:before { content: ""; position: absolute; right: 0; top: 0; width: 1px; height: 100%; background:#eaeaea; z-index: 9;}*/
 .petmenubx h6 { font-size: 14px; line-height: 22px; color: #8C8B8B; font-weight: 500; }
@@ -79,8 +79,8 @@ ul.sub-menu.main-menu.petmenubx > li { width: 33.33%; float: left; padding: 0 27
 .navigation ul.menu> li.menu-item.sub.megamenu > ul> li > ul li .menu-cnt p { padding: 0; font-size: 14px;line-height: 24px; }
 .navigation ul.menu> li.menu-item.sub.megamenu > ul> li > ul li a { font-weight: bold; }
 
-.navigation ul.menu> li.menu-item.sub.megamenu > ul> li.menu-mega-left{ width: 60%; }
-.navigation ul.menu> li.menu-item.sub.megamenu > ul> li.menu-mega-right { width: 40%; }
+.navigation ul.menu> li.menu-item.sub.megamenu > ul> li.menu-mega-left{ width: 70%; }
+.navigation ul.menu> li.menu-item.sub.megamenu > ul> li.menu-mega-right { width:30%; float: right; }
 .navigation ul.menu> li.menu-item.sub.megamenu > ul> li.menu-mega-left > ul { column-count: 2; }
 .navigation ul.menu> li.menu-item.sub.megamenu > ul> li.menu-mega-left > a { display: none; }
 }
