@@ -162,7 +162,7 @@ ul.resircetipslist:before{ content: ""; position: absolute; left: -7px; width: 2
 .resourceslidecnt .morebtn:hover { color: #f89552 }
 .resourcebtn { display: inline-block; vertical-align: middle; margin-top: 75px; }
 
-.youtube .play-button { top: 50%;  left: 50%; transform: translate3d(-50%, -50%, 0); position: absolute; cursor: pointer; width: 101px;    height: 101px; z-index: 1;  background: url(../images/PlayButton.png) no-repeat; }
+.youtube .play-button { top: 50%;  left: 50%; transform: translate3d(-50%, -50%, 0); position: absolute; cursor: pointer; width: 78px; height: 78px; z-index: 1;  background: url(../images/PlayButton.png) no-repeat; }
 section.faq_sec  { padding-top: 160px; background-size: 100% !important; background-position: top center !important; }
 .faq_accordionbx { padding: 0; margin: 0; }
 .faq_sec.brain-bgimg:before{ left: auto; right:0; display: none }
