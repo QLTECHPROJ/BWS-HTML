@@ -24,7 +24,7 @@ h6, .h6 { font-size: 18px; margin: 10px 0; font-family: 'Montserrat',sans-serif;
 .htcall:hover { color: #f89552 }
 .logo { width: auto; padding: 0; margin: 0; }
 nav.navbar.navbar-expand-xl.navbar-light { padding: 0; }
-.header_main { background: rgba(255, 255,255, 0.2); }
+.header_main { background: #fff; }
 header.sticky .header_top{ display: none}
 header.sticky .header_main { background: #fff; }
 
@@ -265,7 +265,28 @@ section.faq_sec  { padding-top: 160px; background-size: 100% !important; backgro
 .NaturalandDrug_Free_Alternative_sec .naturaldrugbtn { margin-top: 20px; }
 .eep_landingnewpage .onestsession_introductorysec { background: #fff; }
 
-/*footer*/
+/*isotop filter*/
+.isotop_filter_sec { padding: 50px 0; background: #fff; }
+
+.tab_selectbx_istop_meubx { margin-bottom: 25px; display: inline-block; vertical-align: middle; width: 100%; }
+.filters-select { float: right; width: auto;  }
+.tab_selectbx_istop_meubx ul.filters { width: auto; display:inline-block; vertical-align: middle; position: relative; padding: 0;
+margin: 0; }
+.tab_selectbx_istop_meubx ul.filters:before { content: ""; height: 1px; width: 100%; position: absolute; bottom: 0; left: 0;background-color: #eeeeec; display: block; }
+.tab_selectbx_istop_meubx ul.filters li { display: inline-block; vertical-align: middle; width: auto; cursor: pointer; position: relative; padding: 0 10px; }
+.tab_selectbx_istop_meubx ul.filters li:before { content: ""; height: 3px; width: 100%; position: absolute; bottom: -1px; left: 0;background-color: #21a6df; display: block; border-radius: 5px; z-index: 1; display: none; }
+.tab_selectbx_istop_meubx ul.filters li.active:before { display: inline-block; }
+
+.isogrid_secbx { display: inline-block; vertical-align:middle; width: 100%; }
+.istopfilter_img { display: inline-block; vertical-align: middle; width: 100%; }
+.istopfilter_img img { width: 100%; }
+.istopfilter_cnt { padding: 10px; display: inline-block; width: 100%; vertical-align: middle; }
+.element-item.istopfilter_box  { position: relative; float: none; width:calc(25% - 20px); height: auto;margin: 5px;padding: 0;background:transparent;color: #262524;box-shadow: 0 0 16px -5px rgb(0 0 0 / 15%); display: inline-block; vertical-align: middle; background: #fff; }
+.istopfilter_cnt h4 { font-size: 20px; margin: 0; font-weight: 600; }
+.istopfilter_cnt p { font-size: 15px;line-height: 24px; padding: 5px 0; }
+.readmorbtn {font-weight: bold; font-size: 16px; line-height: 24px; text-transform: capitalize; }
+.readmorbtn:hover { color: #f89552; }
+/*footer*/ 
 .footer_main { background-size: cover !important; background-position: center top !important; padding: 70px 0px; color: #fff; }
 footer a { color: #fff }
 .footer_logo { display: inline-block; vertical-align: middle; width: auto }
